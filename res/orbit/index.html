@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Orbit仿新浪电影频道2013版幻灯片</title>
+<link rel="stylesheet" href="css/orbit.css">
+</head>
+<body>
+<h1 style="margin: 40px; font: 32px Microsoft Yahei; text-align: center;">用Orbit制作新浪电影频道2013版幻灯片演示</h1>
+<div style="width: 680px; height: 382px; margin: 0 auto;">
+	<div id="featured">
+		<a class="orbit-item" href="http://sc.chinaz.com/" data-caption="#htmlCaption1"><img src="images/img1.jpg" alt="img1"></a>
+		<a class="orbit-item" href="http://sc.chinaz.com/" data-caption="#htmlCaption2"><img src="images/img2.jpg" alt="img1"></a>
+		<a class="orbit-item" href="http://sc.chinaz.com/" data-caption="#htmlCaption3"><img src="images/img3.jpg" alt="img1"></a>
+		<a class="orbit-item" href="http://sc.chinaz.com/" data-caption="#htmlCaption4"><img src="images/img4.jpg" alt="img1"></a>
+	</div>
+	<span class="orbit-caption" id="htmlCaption1">3D《海底大冒险》将映 打响海底保卫战</span>
+	<span class="orbit-caption" id="htmlCaption2">《私人》曝纪录片 章子怡：羡慕嫉妒恨</span>
+	<span class="orbit-caption" id="htmlCaption3">赵又廷林更新戏里有情 跟高圆圆没分手</span>
+	<span class="orbit-caption" id="htmlCaption4">柯震东回归《小时代3》 与郭采洁合体</span>
+</div>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.orbit.min.js"></script>
+<script>
+$(window).load(function() {
+	$('#featured').orbit({
+		bullets : true,
+		startClockOnMouseOut : true,
+		captionAnimation : 'slideOpen'
+	});
+});
+</script>
+</body>
+</html>
