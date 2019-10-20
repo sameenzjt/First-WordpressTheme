@@ -27,6 +27,11 @@ function optionsframework_options() {
 		'five' => __( 'Five', 'theme-textdomain' )
 	);
 
+	$navbar_fixed = array(
+		'fixed-top' => __( '固定', 'sameen' ),
+		'' => __( '不固定', 'sameen' ),
+	);
+
 	// Multicheck Array
 	$multicheck_array = array(
 		'one' => __( 'French Toast', 'theme-textdomain' ),
@@ -105,6 +110,16 @@ function optionsframework_options() {
 		'std' => 'Default',
 		'class' => 'mini',
 		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( '导航栏固定方式', 'sameen' ),
+		'desc' => __( '固定：导航栏始终显示在页面最上方，不跟随内容滚动。不固定：导航栏跟随网页滚动，需要将style.css文件第12行“padding-top: 65px;”改为“padding-top: 0px;”', 'sameen' ),
+		'id' => 'navbar-fixed-select',
+		'std' => 'fixed-top',
+		'type' => 'select',
+		'class' => 'mini', //mini, tiny, small
+		'options' => $navbar_fixed
 	);
 
 	$options[] = array(
@@ -404,6 +419,24 @@ function optionsframework_options() {
 		'type' => 'text'
 	);
 	
+
+
+	$options[] = array(
+		'name' => __( '广告位', 'sameen' ),
+		'type' => 'heading'
+	);
+
+	$options[] = array(
+		'name' => __( '文章底部广告位', 'sameen' ),
+		'desc' => __( '将广告联盟提供的代码复制到这里，将显示在文章页面的文章下面', 'sameen' ),
+		'id' => 'ad-single-bottom',
+		'placeholder' => '填写文字',
+		'type' => 'textarea'
+	);
+
+
+
+
 	add_action('optionsframework_after','exampletheme_options_after', 100);
 	function exampletheme_options_after() { ?>
 	<div style="float:right;text-align: right;">

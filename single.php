@@ -33,13 +33,11 @@
         <div class="alert alert-dark">
             如未标明出处，所有文章均为本站原创。
             <br>
-            如需转载，请附上原文地址：<a href="#">VlogHub » Adobe CC 2019 软件下载及使用方法【终极全解篇】</a>
+            如需转载，请附上原文地址：<a href="<?php the_permalink(); ?>">VlogHub » Adobe CC 2019 软件下载及使用方法【终极全解篇】</a>
         </div>
     </div>
-    <div class="ad whitebg">
-        <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=l1qstn8f" target="_blank">
-            <img src="<?php bloginfo('template_url'); ?>/images/49acdd088cf7c28b71c7ac0d674a00e2.png" border="0" alt="">
-        </a>
+    <div class="ad">
+    <?php echo of_get_option('ad-single-bottom', ''); ?>
     </div>
     <div class="whitebg">
         <h2 class="htitle">相关文章</h2>

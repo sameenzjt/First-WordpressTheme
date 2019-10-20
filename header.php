@@ -35,14 +35,14 @@
 </head>
 <?php flush(); ?>
 <body>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark <?php echo of_get_option('navbar-fixed-select', 'fixed-top'); ?>">
     <a class="navbar-brand" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a><!--页眉网站标题-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <?php 
         if(function_exists('wp_nav_menu')) {
-            wp_nav_menu(array( 
+            wp_nav_menu(array(
                 'theme_location' => 'top-menu',
                 'container_id'=> 'collapsibleNavbar',
                 'container_class'=> 'collapse navbar-collapse justify-content-end',

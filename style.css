@@ -41,7 +41,7 @@ header::before { background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #00
 .bloglist ul { padding: 10px 0 0 }
 .bloglist li { overflow: hidden; margin-bottom: 20px; border-bottom: #eee 1px dashed; padding-bottom: 20px; position: relative; min-height: 120px; }
 .blogtitle { margin: 0 0 10px 0; font-size: 18px; overflow: hidden; }
-.bloglist li:hover .blogtitle a { color: #333; font-weight: bold;}
+.bloglist li:hover .blogtitle a { color: #333; font-weight: 600;}
 .blogtitle b { color: #F00 }
 .blogpic { float: left; width: 23.2%; margin-right: 20px; display: block; overflow: hidden; border-radius: 3px; position: relative }
 .blogpic i { display: block; position: absolute; top: 0; left: 0; z-index: 9; font-style: normal; padding: 3px 5px; background: rgba(18,182,221,.8); font-size: 14px; }
@@ -68,18 +68,21 @@ header::before { background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #00
 .avatar_pic img { width: 100%; border-radius: 50%; }
 .avatar_pic:before { position: absolute; content: ""; background: url(../images/v.png) no-repeat; bottom: 0px; right: 10px; height: 24px; width: 24px; background-size: 24px; }
 .avatar-100{width: 100px; height: 100px;}
+.avatar-30{width: 30px; height: 28px;}
 
 .imgscale img { width: 100%; -moz-transition: all .5s ease; -webkit-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; transition: all 0.5s; }
 .imgscale:hover img { transform: scale(1.1); }
 
 a.viewmore { display: block; right: 10px; bottom: 20px; position: absolute; padding: 3px 10px; background: #12b7de; color: #fff; border-radius: 3px; }
-
+.zhiding{
+    margin-left: 10px;
+}
 
 /*rbox*/
 .rbox { width: 23.5%; float: right; overflow: hidden; }
-.card { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 3px; background: url(b04.jpg) no-repeat top right rgba(42,42,42,1); height: 260px; overflow: hidden; margin-bottom: 20px }
+.card { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 3px; background: url(https://api.xygeng.cn/bing/1366.php) no-repeat top right rgba(42,42,42,1);background-size:auto 100%; height: 200px; overflow: hidden; margin-bottom: 20px }
 .card h2 { font-size: 22px; margin: 10px; color: #89919a; font-weight: normal; padding-bottom: 10px; }
-.card p { font-size: 12px; padding: 0 0 0 20px; line-height: 28px; text-shadow: 0px 1px 2px rgba(0,0,0,.5); color: #d0d2d4; -webkit-animation: animations2 5s ease-in-out 5s; -moz-animation: animations2 5s ease-in-out 5s; -o-animation: animations2 5s ease-in-out 5s; -ms-animation: animations2 5s ease-in-out 5s; animation: animations2 5s ease-in-out 5s; }
+.card p { font-size: 12px; padding: 0 0 0 10px; line-height: 20px; text-shadow: 0px 1px 2px rgba(0,0,0,.5); color: #d0d2d4; -webkit-animation: animations2 5s ease-in-out 5s; -moz-animation: animations2 5s ease-in-out 5s; -o-animation: animations2 5s ease-in-out 5s; -ms-animation: animations2 5s ease-in-out 5s; animation: animations2 5s ease-in-out 5s; }
 .linkmore { margin: 15px }
 .linkmore li { width: 25%; float: left }
 .linkmore li a { height: 53px; display: block; overflow: hidden; box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 50%; margin: 0 5px; }
@@ -151,6 +154,7 @@ a.iconfont.icon-weixin { color: #07AF12;    background: url(../images/c04.png) n
 .links li:hover { background: #f7f7f7 }
 
 
+
 /* 首页页脚 */
 .footer-small{
     margin: 10px 0;
@@ -167,7 +171,7 @@ a.iconfont.icon-weixin { color: #07AF12;    background: url(../images/c04.png) n
 .con_text { line-height: 24px; padding-top: 20px; }
 .con_text a { word-break: break-all; }
 .con_text a:hover { text-decoration: underline }
-.con_text p { margin: 15px 0; }
+.con_text p { margin: 15px 0; text-indent:2em;}
 .con_text img { display: block; max-width: 90% !important;height: auto !important;margin: auto; border: #ddd 1px solid; padding: 10px;background: #f6f6f6;border-radius: 6px; }
 .con_text video {margin: 20px auto; max-width: 90% !important; display: block; background: #000;padding: 20px; border-radius: 20px;}
 
@@ -177,8 +181,10 @@ a.iconfont.icon-weixin { color: #07AF12;    background: url(../images/c04.png) n
 .otherlink li a:hover { text-decoration: none; color: #000 }
 .otherlink li:before { position: absolute; content: ""; width: 3px; height: 3px; background: #000; border-radius: 10px; left: 0px; top: 12px; }
 
-
-
+/**
+文章页的CSS样式——结束
+*/
+/**
 .aui-flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -210,4 +216,4 @@ a.iconfont.icon-weixin { color: #07AF12;    background: url(../images/c04.png) n
     min-width: 0;
     font-size: 14px;
     color: #333;
-}
+}*/
