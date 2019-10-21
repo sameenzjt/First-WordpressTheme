@@ -225,4 +225,22 @@ function wpdaxue_change_author_base() {
  * 更改作者存档前缀 ——结束
  */
 add_theme_support( 'post-thumbnails' );
+
+
+/**
+ * 注册下载
+ */
+
+@include(TEMPLATEPATH.'/pages/download/diy-download.php');
+/**
+ * 注册下载——结束
+ */
+
+
+
+
+
+
+
+
 ?>

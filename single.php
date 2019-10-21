@@ -21,6 +21,7 @@
             <span><?php comments_popup_link('0 条评论', '1 条评论', '% 条评论', '', '评论已关闭'); ?></span>
             <span><?php edit_post_link('编辑', ' • ', ''); ?></span>
         </p>
+<!--文章内容-->
         <div class="con_text">
         <?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
             <?php the_content(); ?>
@@ -30,12 +31,35 @@
 		        没有文章！
 	        </div>
 	    <?php endif; ?>
+<!--下载-->
+        <div>
+            <?php
+                if (is_single()) {
+                    // 自定义字段名称为 _file_name_value
+                    $file_name = get_post_meta($post->ID, "_file_name_value", true);
+
+                    // 自定义字段名称为 _file_size_value
+                    $file_size = get_post_meta($post->ID, "_file_size_value", true);
+
+                    // 去除不必要的空格和HTML标签
+                    $file_name = trim(strip_tags($file_name));
+                    $file_size = trim(strip_tags($file_size));
+
+                    echo '
+                        <p name="description">'.$file_name.'</p>
+                        <p name="description">'.$file_size.'</p>
+
+                ';}
+            ?>
+        </div>
+<!--版权-->
         <div class="alert alert-dark">
             如未标明出处，所有文章均为本站原创。
             <br>
             如需转载，请附上原文地址：<a href="<?php the_permalink(); ?>">VlogHub » Adobe CC 2019 软件下载及使用方法【终极全解篇】</a>
         </div>
     </div>
+<!--广告-->
     <div class="ad">
     <?php echo of_get_option('ad-single-bottom', ''); ?>
     </div>
