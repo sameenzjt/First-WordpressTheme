@@ -32,7 +32,7 @@
 	        </div>
 	    <?php endif; ?>
 <!--下载-->
-        <div>
+        <div class="row" style="width:90%; margin: 0 auto">
             <?php
                 if (is_single()) {
                     // 自定义字段名称为 _file_name_value
@@ -41,13 +41,67 @@
                     // 自定义字段名称为 _file_size_value
                     $file_size = get_post_meta($post->ID, "_file_size_value", true);
 
+                    // 自定义字段名称为 _file_version
+                    $file_version = get_post_meta($post->ID, "_file_version_value", true);
+
+                    // 自定义字段名称为 _file_system
+                    $file_system = get_post_meta($post->ID, "_file_system_value", true);
+
+                    // 自定义字段名称为 _baidupan_link
+                    $baidupan_link = get_post_meta($post->ID, "_baidupan_link_value", true);
+
+                    // 自定义字段名称为 _baidupan_password
+                    $baidupan_password = get_post_meta($post->ID, "_baidupan_password_value", true);
+
+                    // 自定义字段名称为 _otherpan_link
+                    $otherpan_link = get_post_meta($post->ID, "_otherpan_link_value", true);
+
+                    // 自定义字段名称为 _onterpan_password
+                    $onterpan_password = get_post_meta($post->ID, "_onterpan_password_value", true);
+
+                    // 自定义字段名称为 _onterpan_password
+                    $rar_password = get_post_meta($post->ID, "_rar_password_value", true);
+
                     // 去除不必要的空格和HTML标签
                     $file_name = trim(strip_tags($file_name));
                     $file_size = trim(strip_tags($file_size));
 
                     echo '
-                        <p name="description">'.$file_name.'</p>
-                        <p name="description">'.$file_size.'</p>
+                    <div class="col-sm-12 col-md-6">
+                        <p name="file_name">'.$file_name.'</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p name="file_size">'.$file_size.'</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p name="file_version">'.$file_version.'</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p name="file_system">'.$file_system.'</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p name="baidupan_link">'.$baidupan_link.'</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p name="baidupan_password">'.$baidupan_password.'</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p name="onterpan_link">'.$otherpan_link.'</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p name="onterpan_password">'.$onterpan_password.'</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p name="rar_password">'.$rar_password.'</p>
+                    </div>
+                        
+                        
+                        
+                        
+                       
+                        
+                      
+
 
                 ';}
             ?>

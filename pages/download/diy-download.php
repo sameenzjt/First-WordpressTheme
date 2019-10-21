@@ -17,47 +17,47 @@ array(
     "file_name" => array(
         "name" => "_file_name",
         "std" => "",
-        "title" => "文件名:"),
+        "title" => "文件名："),
 
     "file_size" => array(
         "name" => "_file_size",
         "std" => "",
-        "title" => "文件大小:"),
+        "title" => "文件大小："),
 
     "file_version" => array(
         "name" => "_file_version",
         "std" => "",
-        "title" => "文件版本:"),
+        "title" => "文件版本："),
 
     "file_system" => array(
         "name" => "_file_system",
         "std" => "",
-        "title" => "适用平台:"),
+        "title" => "适用平台："),
 
     "baidupan_link" => array(
         "name" => "_baidupan_link",
         "std" => "",
-        "title" => "百度网盘地址:"),
+        "title" => "百度网盘地址："),
 
     "baidupan_password" => array(
         "name" => "_baidupan_password",
         "std" => "",
-        "title" => "百度网盘提取码:"),
+        "title" => "百度网盘提取码："),
 
     "otherpan_link" => array(
         "name" => "_otherpan_link",
         "std" => "",
-        "title" => "其他网盘地址:"),
+        "title" => "其他网盘地址："),
 
     "onterpan_password" => array(
         "name" => "_onterpan_password",
         "std" => "",
-        "title" => "其他网盘提取码:"),
+        "title" => "其他网盘提取码："),
 
     "rar_password" => array(
         "name" => "_rar_password",
         "std" => "",
-        "title" => "压缩包解压密码:"),
+        "title" => "压缩包解压密码："),
 );
 
 
