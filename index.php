@@ -10,7 +10,7 @@
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>   
             <!-- 轮播（Carousel）项目 -->
-            <div class="carousel-inner">
+            <div class="carousel-inner rounded">
                 <div class="carousel-item active">
                     <img src="<?php echo of_get_option('index-slide-pic-1', 'no entry' ); ?>" alt="幻灯片1" class="images/mg-responsive">
                     <div class="carousel-caption"><?php echo of_get_option('index-slide-title-1', '' ); ?></div>

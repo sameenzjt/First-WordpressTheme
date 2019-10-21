@@ -78,7 +78,7 @@ array(
     echo'<p>'.$meta_box['title'].'</p>';
 
     // 自定义字段输入框
-    echo '<textarea cols="60" rows="1" name="'.$meta_box['name'].'_value">'.$meta_box_value.'</textarea><br />';
+    echo '<span><textarea cols="60" rows="1" name="'.$meta_box['name'].'_value">'.$meta_box_value.'</textarea></span>';
   }
    
   echo '<input type="hidden" name="ludou_metaboxes_nonce" id="ludou_metaboxes_nonce" value="'.wp_create_nonce( plugin_basename(__FILE__) ).'" />';

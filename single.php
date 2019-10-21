@@ -33,7 +33,9 @@
 	        </div>
 	    <?php endif; ?>
 <!--下载-->
-        <div class="row">
+        <div>
+
+
             <?php
 
                 if (is_single()) {
@@ -75,38 +77,81 @@
                     $file_otherpan_link = trim(strip_tags($otherpan_link));
                     $otherpan_password = trim(strip_tags($otherpan_password));
                     $rar_password = trim(strip_tags($rar_password));
-                   
-
-                    echo '
                     
-                    <div class="col-sm-12 col-md-6">
-                        <p name="file_name">文件名：'.$file_name.'</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p name="file_size">文件大小：'.$file_size.'</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p name="file_version">版本：'.$file_version.'</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p name="file_system">适用平台：'.$file_system.'</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p name="baidupan_link">百度网盘：'.$baidupan_link.'</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p name="baidupan_password">百度网盘提取码：'.$baidupan_password.'</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p name="onterpan_link">其他网盘：'.$otherpan_link.'</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p name="otherpan_password">其他网盘提取码：'.$otherpan_password.'</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <p name="rar_password">压缩包解压密码：'.$rar_password.'</p>
-                    </div>
-                ';}
+                    if ($file_name == null) echo '' . "";
+                    if ($file_name != null) echo '
+                    <div style=" margin: 0px auto;" class="row">
+                        <div style="background-color: red; padding: 40px 0px; margin: 10px 0px;" class="col-sm-12 col-md-12 text-center rounded">
+                            <h3 name="file_name">'.$file_name.'</h3>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <p name="file_name">'.$file_name.'</p>
+                        </div>
+                    ' . "";
+
+                    if ($file_size == null) echo '' . "";
+                    if ($file_size != null) echo '
+                        <div class="col-sm-12 col-md-6">
+                            <p name="file_size">'.$file_size.'</p>
+                        </div>
+                    ' . "";
+
+                    if ($file_version == null) echo '' . "";
+                    if ($file_version != null) echo '
+                        <div class="col-sm-12 col-md-6">
+                            <p name="file_version">'.$file_version.'</p>
+                        </div>
+                    ' . "";
+
+                    if ($file_system == null) echo '' . "";
+                    if ($file_system != null) echo '
+                        <div class="col-sm-12 col-md-6">
+                            <p name="file_system">'.$file_system.'</p>
+                        </div>
+                    ' . "";
+
+                    if ($baidupan_link == null) echo '' . "";
+                    if ($baidupan_link != null) echo '
+                        <div class="col-sm-12 col-md-6">
+                            <p name="baidupan_link">'.$baidupan_link.'</p>
+                        </div>
+                    ' . "";
+
+                    if ($baidupan_password == null) echo '' . "";
+                    if ($baidupan_password != null) echo '
+                        <div class="col-sm-12 col-md-6">
+                            <p name="baidupan_password">'.$baidupan_password.'</p>
+                        </div>
+                    ' . "";
+
+                    if ($otherpan_link == null) echo '' . "";
+                    if ($otherpan_link != null) echo '
+                        <div class="col-sm-12 col-md-6">
+                            <p name="onterpan_link">'.$otherpan_link.'</p>
+                        </div>
+                    ' . "";
+
+                    if ($otherpan_password == null) echo '' . "";
+                    if ($otherpan_password != null) echo '
+                        <div class="col-sm-12 col-md-6">
+                            <p name="otherpan_password">'.$otherpan_password.'</p>
+                        </div>
+                    ' . "";
+
+                    if ($rar_password == null) echo '' . "";
+                    if ($rar_password != null) echo '
+                        <div class="col-sm-12 col-md-6">
+                            <p name="rar_password">'.$rar_password.'</p>
+                        </div>
+                    ' . "";
+                    
+                    if ($file_name == null) echo '' . "";
+                    if ($file_name != null) echo '</div>' . "";
+
+                }
+
+
+                
             ?>
         </div>
 <!--版权-->
