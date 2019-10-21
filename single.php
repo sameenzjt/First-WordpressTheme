@@ -32,7 +32,7 @@
 	        </div>
 	    <?php endif; ?>
 <!--下载-->
-        <div class="row" style="width:90%; margin: 0 auto">
+        <div class="row" style=" margin: 0 auto">
             <?php
                 if (is_single()) {
                     // 自定义字段名称为 _file_name_value
@@ -56,45 +56,56 @@
                     // 自定义字段名称为 _otherpan_link
                     $otherpan_link = get_post_meta($post->ID, "_otherpan_link_value", true);
 
-                    // 自定义字段名称为 _onterpan_password
-                    $onterpan_password = get_post_meta($post->ID, "_onterpan_password_value", true);
+                    // 自定义字段名称为 _otherpan_password
+                    $otherpan_password = get_post_meta($post->ID, "_otherpan_password_value", true);
 
-                    // 自定义字段名称为 _onterpan_password
+                    // 自定义字段名称为 _rar_password
                     $rar_password = get_post_meta($post->ID, "_rar_password_value", true);
 
                     // 去除不必要的空格和HTML标签
                     $file_name = trim(strip_tags($file_name));
                     $file_size = trim(strip_tags($file_size));
+                    $file_version = trim(strip_tags($file_version));
+                    $file_system = trim(strip_tags($file_system));
+                    $baidupan_link = trim(strip_tags($baidupan_link));
+                    $baidupan_password = trim(strip_tags($baidupan_password));
+                    $file_otherpan_link = trim(strip_tags($otherpan_link));
+                    $otherpan_password = trim(strip_tags($otherpan_password));
+                    $rar_password = trim(strip_tags($rar_password));
+                   
 
                     echo '
-                    <div class="col-sm-12 col-md-6">
-                        <p name="file_name">'.$file_name.'</p>
+                    <div class="col-sm-12 col-md-12 text-center" style="background-color:red;background:url(https://www.sameen.art/wp-content/uploads/2019/10/october.png); width:100%; padding:40px 0; margin: 20px 0;">
+                        <h2 name="file_name">'.$file_name.'</h2>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <p name="file_size">'.$file_size.'</p>
+                        <p name="file_name">文件名：'.$file_name.'</p>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <p name="file_version">'.$file_version.'</p>
+                        <p name="file_size">文件大小：'.$file_size.'</p>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <p name="file_system">'.$file_system.'</p>
+                        <p name="file_version">版本：'.$file_version.'</p>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <p name="baidupan_link">'.$baidupan_link.'</p>
+                        <p name="file_system">适用平台：'.$file_system.'</p>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <p name="baidupan_password">'.$baidupan_password.'</p>
+                        <p name="baidupan_link">百度网盘：'.$baidupan_link.'</p>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <p name="onterpan_link">'.$otherpan_link.'</p>
+                        <p name="baidupan_password">百度网盘提取码：'.$baidupan_password.'</p>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <p name="onterpan_password">'.$onterpan_password.'</p>
+                        <p name="onterpan_link">其他网盘：'.$otherpan_link.'</p>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <p name="rar_password">'.$rar_password.'</p>
+                        <p name="otherpan_password">其他网盘提取码：'.$otherpan_password.'</p>
                     </div>
-                        
+                    <div class="col-sm-12 col-md-6">
+                        <p name="rar_password">压缩包解压密码：'.$rar_password.'</p>
+                    </div>
+                    
                         
                         
                         
@@ -105,7 +116,7 @@
 
                 ';}
             ?>
-        </div>
+ </div>
 <!--版权-->
         <div class="alert alert-dark">
             如未标明出处，所有文章均为本站原创。

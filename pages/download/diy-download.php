@@ -49,8 +49,8 @@ array(
         "std" => "",
         "title" => "其他网盘地址："),
 
-    "onterpan_password" => array(
-        "name" => "_onterpan_password",
+    "otherpan_password" => array(
+        "name" => "_otherpan_password",
         "std" => "",
         "title" => "其他网盘提取码："),
 
