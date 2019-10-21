@@ -21,6 +21,7 @@
             <span><?php comments_popup_link('0 条评论', '1 条评论', '% 条评论', '', '评论已关闭'); ?></span>
             <span><?php edit_post_link('编辑', ' • ', ''); ?></span>
         </p>
+        
 <!--文章内容-->
         <div class="con_text">
         <?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
@@ -32,9 +33,11 @@
 	        </div>
 	    <?php endif; ?>
 <!--下载-->
-        <div class="row" style=" margin: 0 auto">
+        <div class="row">
             <?php
+
                 if (is_single()) {
+
                     // 自定义字段名称为 _file_name_value
                     $file_name = get_post_meta($post->ID, "_file_name_value", true);
 
@@ -75,9 +78,7 @@
                    
 
                     echo '
-                    <div class="col-sm-12 col-md-12 text-center" style="background-color:red;background:url(https://www.sameen.art/wp-content/uploads/2019/10/october.png); width:100%; padding:40px 0; margin: 20px 0;">
-                        <h2 name="file_name">'.$file_name.'</h2>
-                    </div>
+                    
                     <div class="col-sm-12 col-md-6">
                         <p name="file_name">文件名：'.$file_name.'</p>
                     </div>
@@ -105,23 +106,14 @@
                     <div class="col-sm-12 col-md-6">
                         <p name="rar_password">压缩包解压密码：'.$rar_password.'</p>
                     </div>
-                    
-                        
-                        
-                        
-                       
-                        
-                      
-
-
                 ';}
             ?>
- </div>
+        </div>
 <!--版权-->
         <div class="alert alert-dark">
             如未标明出处，所有文章均为本站原创。
             <br>
-            如需转载，请附上原文地址：<a href="<?php the_permalink(); ?>">VlogHub » Adobe CC 2019 软件下载及使用方法【终极全解篇】</a>
+            如需转载，请附上原文地址：<a href="<?php the_permalink(); ?>"><?php bloginfo('name'); ?> » <?php the_title(); ?></a>
         </div>
     </div>
 <!--广告-->

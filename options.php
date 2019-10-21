@@ -240,6 +240,13 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
+		'name' => __( '下载模块banner', 'sameen' ),
+		'desc' => __( '位于文章页面，下载模块最上方标题的背景图片', 'sameen' ),
+		'id' => 'single_download_banner',
+		'placeholder' => '选择图片',
+		'type' => 'upload'
+	);
+	$options[] = array(
 		'name' => __( 'Check to Show a Hidden Text Input', 'theme-textdomain' ),
 		'desc' => __( 'Click here and see what happens.', 'theme-textdomain' ),
 		'id' => 'example_showhidden',
