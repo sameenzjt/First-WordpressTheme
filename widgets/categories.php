@@ -1,0 +1,1 @@
+<ul><?php wp_list_cats("sort_column=name&hierarchical=0&exclude="); ?></ul>

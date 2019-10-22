@@ -182,6 +182,28 @@ if ( function_exists('register_sidebar') ) {
  * 注册小工具
  */
 include_once get_stylesheet_directory() . '/widgets/qcgzxw_bktj.php';
+
+function your_widget_display($args) {
+		echo $args['before_widget'];
+		echo $args['before_title'] . 'My Unique Widget' .  $args['after_title'];
+		echo $args['after_widget'];
+		// print some HTML for the widget to display here
+		echo "Your Widget Test";
+	 }
+
+	 wp_register_sidebar_widget(
+		'mb_hot',        // your unique widget id
+		'热门文章',          // widget name
+		'your_widget_display',  // callback function
+		array(                  // options
+			'description' => 'Description of what your widget does'
+		)
+	);
+	
+
+
+function mb_mb_hot() { include(TEMPLATEPATH . '/widgets/mb_hot.php'); }   
+function mb_categories() { include(TEMPLATEPATH . '/widgets/categories.php'); }
 /**
  * 注册小工具——结束
  */
