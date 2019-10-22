@@ -45,9 +45,10 @@ register_widget('My_Widget');
 // 自定义DOM结构，可以按照你主题的风格来自定义编写
 function getContent($title, $content) {
 	echo '
+	<div class="whitebg">
 		<p class="htitle">'.$title.'</p>
 		<p>'.$content.'</p>
-		
+	</div>
 	';
 }
 ?>

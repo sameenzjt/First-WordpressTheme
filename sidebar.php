@@ -10,7 +10,7 @@
                     <p>Email：<?php echo of_get_option('your-email', '请到主题选项--基本设置中填写'); ?></p>
                 <?php endif; ?>
             </div>
-            <div class="whitebg">
+            <div>
                 <?php 
                     if(is_home() || is_front_page()) { //首页显示“首页侧栏”
                         if (function_exists('dynamic_sidebar') && dynamic_sidebar('sidebar-index')){} 
