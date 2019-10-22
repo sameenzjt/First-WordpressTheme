@@ -40,7 +40,7 @@
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <li>
                     <h3 class="blogtitle">
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><span class="badge badge-primary zhiding"><?php if ( is_sticky() ) {echo "置顶";}?></span>
+                        <a href="<?php the_permalink(); ?>" target="<?php echo of_get_option('index_single_target', ''); ?>" ><?php the_title(); ?></a><span class="badge badge-primary zhiding"><?php if ( is_sticky() ) {echo "置顶";}?></span>
                     </h3>
                     <span class="blogpic imgscale">
                         <i>
@@ -53,7 +53,7 @@
                         
                             </a>
                         </i>
-                        <a href="<?php the_permalink(); ?>" title="">
+                        <a href="<?php the_permalink(); ?>" title="" >
                             <img src="<?php
                                 $full_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full');
                                 echo $full_image_url[0];

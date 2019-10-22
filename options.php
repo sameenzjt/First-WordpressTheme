@@ -349,6 +349,14 @@ function optionsframework_options() {
 		'settings' => $wp_editor_settings
 	);
 
+	$options[] = array(
+		'name' => __( '首页文章打开方式', 'sameen' ),
+		'desc' => sprintf( __( '填写<a href="%1$s" target="_blank">HTML中a标签target属性</a>，不熟悉HTML的朋友不要填写', 'sameen' ), 'https://www.w3school.com.cn/tags/att_a_target.asp' ),
+		'id' => 'index_single_target',
+		'std' => '',
+		'placeholder' => '_self',
+		'type' => 'text'
+	);
 	/*
 	* 首页幻灯片
 	*/
