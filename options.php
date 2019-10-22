@@ -441,20 +441,21 @@ function optionsframework_options() {
 		'type' => 'textarea'
 	);
 
+	
 
 
-
-	add_action('optionsframework_after','exampletheme_options_after', 100);
-	function exampletheme_options_after() { ?>
-	<div style="float:right;text-align: right;">
-		<p>Content after the options panel!</p>
-		<p>
-			主题版本号：<?php $theme = wp_get_theme(); echo $theme->get( 'Version' );//主题名?>
-			&nbsp;&nbsp;
-			<a href="<?php bloginfo('template_url'); ?>/ReadMe.html">主题版本信息</a>
-		</p>
-	</div>
-		
-	<?php }
 	return $options;
+
+	
 }
+
+
+add_action('optionsframework_after','exampletheme_options_after', 100);
+	function exampletheme_options_after() { ?>
+	<span>感谢使用本主题，Beta版本完全免费</span>
+	<div style="float:right;">
+		<span>主题版本：<?php $theme = wp_get_theme(); echo $theme->get( 'Version' );//主题版本?></span>
+		<span><a href="https://github.com/sameenzjt/First-WordpressTheme">GitHub</a></span>
+		<span><a href="https://gitee.com/sameenzjt/First-WordpressTheme">gitee</a></span>
+	</div>
+	<?php }
