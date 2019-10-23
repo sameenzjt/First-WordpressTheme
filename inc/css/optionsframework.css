@@ -1,7 +1,7 @@
 /* Options Framework Admin Styles */
 
 #optionsframework {
-    max-width:840px;
+    max-width:1020px;
     background:#fff;
 }
 #optionsframework h3 {
@@ -26,6 +26,7 @@
 	min-width:350px;
 	width: 54%;
 	padding-right:2%;
+	margin-left: 26px;
 }
 #optionsframework .section .explain {
 	max-width:38%;
