@@ -24,13 +24,12 @@ class Example_Widget extends WP_Widget {
     /** 
      * Widget setup. 小部件设置。
      */
-    function Example_Widget() {
-        /* Widget settings.小部件设置 */
-        $widget_ops = array( 'classname' => 'example', 'description' => __('小工具描述语句', 'sameen') );
-        /* Widget control settings.小部件控件设置 */
+    
+        
+    function __construct(){
+        $widget_ops = array('description' => __('小工具描述语句', 'sameen'));
         $control_ops = array( 'width' => 200, 'height' => 350, 'id_base' => 'example-widget' );
-        /* Create the widget.创建小部件。 */
-        $this->WP_Widget( 'example-widget', __('小工具标题', 'sameen'), $widget_ops, $control_ops );
+        parent::__construct('Example_Widget' ,__('小工具标题', 'sameen'), $widget_ops);
     }
     /** 
      * How to display the widget on the screen. 如何在屏幕上显示小部件。

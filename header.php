@@ -25,7 +25,6 @@
     <script src="<?php bloginfo('template_url'); ?>/res/js/comm.js"></script>
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - 所有文章" href="<?php echo get_bloginfo('rss2_url'); ?>" />
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - 所有评论" href="<?php bloginfo('comments_rss2_url'); ?>" />
-    <link rel="stylesheet" href="res/css/orbit.css">
     <style type="text/css">
     body{
         background-color: #f2f2f2;

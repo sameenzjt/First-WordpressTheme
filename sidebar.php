@@ -43,7 +43,7 @@
             <div class="whitebg paihang">
                 <p class="htitle">点击排行</p>
                 <section class="topnews imgscale">
-                    <a href="http://v.bootstrapmb.com/">
+                    <a href="#">
                         <img src="<?php bloginfo('template_url'); ?>/images/h1.jpg">
                         <span>6条网页设计配色原则,让你秒变配色高手</span>
                     </a>

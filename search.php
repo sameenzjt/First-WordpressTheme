@@ -2,37 +2,6 @@
 
 <article>
     <div class="lbox">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- 轮播（Carousel）指标 -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>   
-            <!-- 轮播（Carousel）项目 -->
-            <div class="carousel-inner rounded">
-                <div class="carousel-item active">
-                    <img src="<?php echo of_get_option('index-slide-pic-1', 'no entry' ); ?>" alt="幻灯片1" class="images/mg-responsive">
-                    <div class="carousel-caption"><?php echo of_get_option('index-slide-title-1', '' ); ?></div>
-                </div>
-                <div class="carousel-item">
-                    <img src="<?php echo of_get_option('index-slide-pic-2', 'no entry' ); ?>" alt="幻灯片2" class="images/img-responsive">
-                    <div class="carousel-caption"><?php echo of_get_option('index-slide-title-2', '' ); ?></div>
-                </div>
-                <div class="carousel-item">
-                    <img src="<?php echo of_get_option('index-slide-pic-3', 'no entry' ); ?>" alt="幻灯片3" class="images/img-responsive">
-                    <div class="carousel-caption"><?php echo of_get_option('index-slide-title-3', '' ); ?></div>
-                </div>
-            </div>
-            <!-- 轮播（Carousel）导航 -->
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-
         <div class="whitebg bloglist">
             <p class="htitle">最新文章</p>
             <div>

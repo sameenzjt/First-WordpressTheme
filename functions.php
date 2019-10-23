@@ -182,10 +182,7 @@ if ( function_exists('register_sidebar') ) {
 /**
  * 注册小工具
  */
-
-
-
-// 任何添加于主题目录jvadd文件夹内的php文件都被调用到这里////////
+// 任何添加于主题目录widgets文件夹内的php文件都被调用到这里
 define('widgets', TEMPLATEPATH.'/widgets');
 IncludeAll( widgets );
 function IncludeAll($dir){
@@ -202,7 +199,6 @@ function IncludeAll($dir){
         }
     }
 }
-
 /**
  * 注册小工具——结束
  */
@@ -257,7 +253,6 @@ add_theme_support( 'post-thumbnails' );
 /**
  * 注册下载——结束
  */
-
 
 
 
