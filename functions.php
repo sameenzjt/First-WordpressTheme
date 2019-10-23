@@ -183,7 +183,7 @@ if ( function_exists('register_sidebar') ) {
  * 注册小工具
  */
 
-<?php
+
 /** 
  * Add function to widgets_init that'll load our widget. 
  * @since 0.1 
@@ -289,7 +289,7 @@ class Example_Widget extends WP_Widget {
     <?php
     }
 }
-?>
+
 
 
 /**
