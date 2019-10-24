@@ -246,6 +246,7 @@ function optionsframework_options() {
 		'placeholder' => '选择图片',
 		'type' => 'upload'
 	);
+
 	$options[] = array(
 		'name' => __( 'Check to Show a Hidden Text Input', 'theme-textdomain' ),
 		'desc' => __( 'Click here and see what happens.', 'theme-textdomain' ),
@@ -259,6 +260,14 @@ function optionsframework_options() {
 		'id' => 'author-prefix-change',
 		'std' => 'author',
 		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( '微信公众号二维码', 'sameen' ),
+		'desc' => __( '微信公众号二维码，建议1：1比例', 'sameen' ),
+		'id' => 'qr_weixin_gzh',
+		'placeholder' => '选择图片',
+		'type' => 'upload'
 	);
 
 	$options[] = array(
@@ -445,7 +454,7 @@ function optionsframework_options() {
 		'name' => __( '文章底部广告位', 'sameen' ),
 		'desc' => __( '将广告联盟提供的代码复制到这里，将显示在文章页面的文章下面', 'sameen' ),
 		'id' => 'ad-single-bottom',
-		'placeholder' => '填写广告联盟提供的代码',
+		'placeholder' => '填写文字',
 		'type' => 'textarea'
 	);
 

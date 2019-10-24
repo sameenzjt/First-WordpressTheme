@@ -180,33 +180,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="whitebg tongji">
-                <p class="htitle">站点信息</p>
-                <ul>
-                    <li>
-                        <b>建站时间</b>：2018-10-24
-                    </li>
-                    <li>
-                        <b>网站程序</b>：帝国CMS7.5
-                    </li>
-                    <li>
-                        <b>主题模板</b>：<a href="http://v.bootstrapmb.com/2019/3/ik0la3804/index.html#" target="_blank">《今夕何夕》</a>
-                    </li>
-                    <li>
-                        <b>文章统计</b>：299条
-                    </li>
-                    <li>
-                        <b>文章评论</b>：490条
-                    </li>
-                    <li>
-                        <b>统计数据</b>：<a href="http://v.bootstrapmb.com/">百度统计</a>
-                    </li>
-                    <li>
-                        <b>微信公众号</b>：扫描二维码，关注我们
-                    </li>
-                    <img src="<?php bloginfo('template_url'); ?>/images/wxgzh.jpg" class="tongji_gzh">
-                </ul>
-            </div>
+            
             <div class="links whitebg">
                 <p class="htitle">
                     <span class="sqlink">
