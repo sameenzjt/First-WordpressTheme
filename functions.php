@@ -161,8 +161,8 @@ if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
 	  'name'=>'首页侧边栏',
 	  'id'=>'sidebar-index',
-	  'before_widget' => '<li id="%1$s" class="sidebar_li %2$s">',
-	  'after_widget' => '</li>',
+	  'before_widget' => '<div id="%1$s" class="sidebar_li %2$s whitebg">',
+	  'after_widget' => '</div>',
 	  'before_title' => '<p class="htitle">',
 	  'after_title' => '</p>',
 	));

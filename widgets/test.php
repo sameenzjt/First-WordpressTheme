@@ -29,7 +29,7 @@ class Example_Widget extends WP_Widget {
     function __construct(){
         $widget_ops = array('description' => __('小工具描述语句', 'sameen'));
         $control_ops = array( 'width' => 200, 'height' => 350, 'id_base' => 'example-widget' );
-        parent::__construct('Example_Widget' ,__('小工具标题', 'sameen'), $widget_ops);
+        parent::__construct('Example_Widget' ,__('(主题)小工具标题', 'sameen'), $widget_ops);
     }
     /** 
      * How to display the widget on the screen. 如何在屏幕上显示小部件。

@@ -13,7 +13,7 @@ class Widget_Search extends WP_Widget {
    
     function __construct(){
         $widget_ops = array('classname' => 'Widget_Search','description' => __('搜索(主题风格)','sameen'));
-        parent::__construct('Widget_Search' ,__('搜索(主题)', 'sameen'), $widget_ops);
+        parent::__construct('Widget_Search' ,__('(主题)搜索', 'sameen'), $widget_ops);
     }
     function form($instance) {
         $instance = wp_parse_args ( ( array ) $instance, array (

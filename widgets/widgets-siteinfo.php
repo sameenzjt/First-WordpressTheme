@@ -13,7 +13,7 @@ class Widget_siteinfo extends WP_Widget {
    
     function __construct(){
         $widget_ops = array('classname' => 'Widget_siteinfo','description' => __('站点信息(主题风格)','sameen'));
-        parent::__construct('Widget_siteinfo' ,__('站点信息(主题)', 'sameen'), $widget_ops);
+        parent::__construct('Widget_siteinfo' ,__('(主题)站点信息', 'sameen'), $widget_ops);
     }
     function form($instance) {
         $instance = wp_parse_args ( ( array ) $instance, array (
@@ -52,7 +52,7 @@ class Widget_siteinfo extends WP_Widget {
     ';
     if ($title != null) echo '
         <div class="whitebg tongji">
-            <p class="">'. $instance['title'] .'</p>
+            <p class="htitle">'. $instance['title'] .'</p>
     ';
 
     echo '

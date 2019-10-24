@@ -1,290 +1,811 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-10-18 20:20+0800\n"
-"PO-Revision-Date: 2019-10-18 20:21+0800\n"
+"POT-Creation-Date: 2019-10-24 16:57+0800\n"
+"PO-Revision-Date: 2019-10-24 16:57+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
-"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ../..\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
-"X-Poedit-SearchPath-0: functions.php\n"
-"X-Poedit-SearchPath-1: inc/includes/class-options-framework-admin.php\n"
-"X-Poedit-SearchPath-2: options.php\n"
+"X-Poedit-SearchPath-0: First-WordpressTheme/functions.php\n"
+"X-Poedit-SearchPath-1: First-WordpressTheme/inc/includes/class-options-"
+"framework-admin.php\n"
+"X-Poedit-SearchPath-2: First-WordpressTheme/options.php\n"
+"X-Poedit-SearchPath-3: First-WordpressTheme/author.php\n"
+"X-Poedit-SearchPath-4: First-WordpressTheme/footer.php\n"
+"X-Poedit-SearchPath-5: First-WordpressTheme/functions.php\n"
+"X-Poedit-SearchPath-6: First-WordpressTheme/header.php\n"
+"X-Poedit-SearchPath-7: First-WordpressTheme/index.php\n"
+"X-Poedit-SearchPath-8: First-WordpressTheme/options.php\n"
+"X-Poedit-SearchPath-9: First-WordpressTheme/page.php\n"
+"X-Poedit-SearchPath-10: First-WordpressTheme/search.php\n"
+"X-Poedit-SearchPath-11: First-WordpressTheme/sidebar.php\n"
+"X-Poedit-SearchPath-12: First-WordpressTheme/single.php\n"
+"X-Poedit-SearchPath-13: First-WordpressTheme/inc/options-framework.php\n"
+"X-Poedit-SearchPath-14: First-WordpressTheme/inc/includes/class-options-"
+"framework.php\n"
+"X-Poedit-SearchPath-15: First-WordpressTheme/inc/includes/class-options-"
+"framework-admin.php\n"
+"X-Poedit-SearchPath-16: First-WordpressTheme/inc/includes/class-options-"
+"interface.php\n"
+"X-Poedit-SearchPath-17: First-WordpressTheme/inc/includes/class-options-"
+"media-uploader.php\n"
+"X-Poedit-SearchPath-18: First-WordpressTheme/inc/includes/class-options-"
+"sanitization.php\n"
+"X-Poedit-SearchPath-19: First-WordpressTheme/pages/download/diy-download."
+"php\n"
+"X-Poedit-SearchPath-20: First-WordpressTheme/page-template/page-about.php\n"
+"X-Poedit-SearchPath-21: First-WordpressTheme/page-template/page-privacy-"
+"policy.php\n"
+"X-Poedit-SearchPath-22: First-WordpressTheme/page-template/page-user-center."
+"php\n"
+"X-Poedit-SearchPath-23: First-WordpressTheme/widgets/test.php\n"
+"X-Poedit-SearchPath-24: First-WordpressTheme/widgets/widgets-ad.php\n"
+"X-Poedit-SearchPath-25: First-WordpressTheme/widgets/widgets-search.php\n"
+"X-Poedit-SearchPath-26: First-WordpressTheme/widgets/widgets-siteinfo.php\n"
+"X-Poedit-SearchPath-27: First/widgets/ultimate-posts-widget.php\n"
 
-#: functions.php:32
+#: First-WordpressTheme/functions.php:33
 msgid "现在的位置："
 msgstr ""
 
-#: functions.php:35
+#: First-WordpressTheme/functions.php:36
 msgid "Home"
-msgstr ""
+msgstr "主页"
 
-#: functions.php:91
+#: First-WordpressTheme/functions.php:92
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: functions.php:95
+#: First-WordpressTheme/functions.php:96
 #, php-format
 msgid "Tag Archives: %s"
 msgstr ""
 
-#: functions.php:101
+#: First-WordpressTheme/functions.php:102
 #, php-format
 msgid "Author Archives: %s"
 msgstr ""
 
-#: functions.php:105
+#: First-WordpressTheme/functions.php:106
 msgid "Not Found"
 msgstr "Not Found"
 
-#: functions.php:110
+#: First-WordpressTheme/functions.php:111
 #, php-format
 msgid "( Page %s )"
 msgstr ""
 
-#: inc/includes/class-options-framework-admin.php:91
-#: inc/includes/class-options-framework-admin.php:92
+#: First-WordpressTheme/inc/includes/class-options-framework-admin.php:91
+#: First-WordpressTheme/inc/includes/class-options-framework-admin.php:92
 msgid "主题选项"
 msgstr "主题选项"
 
-#: inc/includes/class-options-framework-admin.php:204
-msgid "Click OK to reset. Any theme settings will be lost!"
+#: First-WordpressTheme/inc/includes/class-options-framework-admin.php:204
+msgid "单击确定重置，所有主题设置都将丢失！"
 msgstr ""
 
-#: inc/includes/class-options-framework-admin.php:235
-msgid "Default options restored."
+#: First-WordpressTheme/inc/includes/class-options-framework-admin.php:235
+msgid "恢复默认选项"
 msgstr ""
 
-#: inc/includes/class-options-framework-admin.php:289
-msgid "Options saved."
+#: First-WordpressTheme/inc/includes/class-options-framework-admin.php:289
+msgid "选项保存成功"
 msgstr ""
 
-#: options.php:23
+#: First-WordpressTheme/inc/includes/class-options-media-uploader.php:62
+msgid "No file chosen"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-media-uploader.php:65
+#: First-WordpressTheme/inc/includes/class-options-media-uploader.php:118
+msgid "Upload"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-media-uploader.php:67
+#: First-WordpressTheme/inc/includes/class-options-media-uploader.php:119
+msgid "Remove"
+msgstr "去掉"
+
+#: First-WordpressTheme/inc/includes/class-options-media-uploader.php:70
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-media-uploader.php:94
+msgid "View File"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:316
+msgid "No Repeat"
+msgstr "没有重复"
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:317
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:318
+msgid "Repeat Vertically"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:319
+msgid "Repeat All"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:331
+msgid "Top Left"
+msgstr "上 左"
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:332
+msgid "Top Center"
+msgstr "顶级中心"
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:333
+msgid "Top Right"
+msgstr "上 右"
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:334
+msgid "Middle Left"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:335
+msgid "Middle Center"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:336
+msgid "Middle Right"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:337
+msgid "Bottom Left"
+msgstr "底 左"
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:338
+msgid "Bottom Center"
+msgstr "底部中心"
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:339
+msgid "Bottom Right"
+msgstr "底 右"
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:351
+msgid "Scroll Normally"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:352
+msgid "Fixed in Place"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:424
+msgid "Normal"
+msgstr "正常"
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:425
+msgid "Italic"
+msgstr ""
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:426
+msgid "Bold"
+msgstr "加粗"
+
+#: First-WordpressTheme/inc/includes/class-options-sanitization.php:427
+msgid "Bold Italic"
+msgstr ""
+
+#: First-WordpressTheme/options.php:23
 msgid "One"
 msgstr ""
 
-#: options.php:24
+#: First-WordpressTheme/options.php:24
 msgid "Two"
 msgstr ""
 
-#: options.php:25
+#: First-WordpressTheme/options.php:25
 msgid "Three"
 msgstr ""
 
-#: options.php:26
+#: First-WordpressTheme/options.php:26
 msgid "Four"
 msgstr ""
 
-#: options.php:27
+#: First-WordpressTheme/options.php:27
 msgid "Five"
 msgstr ""
 
-#: options.php:32
+#: First-WordpressTheme/options.php:31
+msgid "固定"
+msgstr ""
+
+#: First-WordpressTheme/options.php:32
+msgid "不固定"
+msgstr ""
+
+#: First-WordpressTheme/options.php:37
 msgid "French Toast"
 msgstr ""
 
-#: options.php:33
+#: First-WordpressTheme/options.php:38
 msgid "Pancake"
 msgstr ""
 
-#: options.php:34
+#: First-WordpressTheme/options.php:39
 msgid "Omelette"
 msgstr ""
 
-#: options.php:35
+#: First-WordpressTheme/options.php:40
 msgid "Crepe"
 msgstr ""
 
-#: options.php:36
+#: First-WordpressTheme/options.php:41
 msgid "Waffle"
 msgstr ""
 
-#: options.php:97
-msgid "Basic Settings"
+#: First-WordpressTheme/options.php:102
+msgid "基本设置"
 msgstr ""
 
-#: options.php:102
-msgid "Input Text Mini"
+#: First-WordpressTheme/options.php:107
+msgid "1"
+msgstr "1"
+
+#: First-WordpressTheme/options.php:108
+msgid "1."
 msgstr ""
 
-#: options.php:103
-msgid "A mini text input field."
+#: First-WordpressTheme/options.php:116
+msgid "导航栏固定方式"
 msgstr ""
 
-#: options.php:111
+#: First-WordpressTheme/options.php:117
+msgid ""
+"固定：导航栏始终显示在页面最上方，不跟随内容滚动。不固定：导航栏跟随网页滚"
+"动，需要将style.css文件第12行“padding-top: 65px;”改为“padding-top: 0px;”"
+msgstr ""
+
+#: First-WordpressTheme/options.php:126
+msgid "网站备案信息"
+msgstr ""
+
+#: First-WordpressTheme/options.php:127
+msgid "位于网站最下方，可填写其他文字。例：“鲁ICP备00000000号”"
+msgstr ""
+
+#: First-WordpressTheme/options.php:135
+msgid "邮箱"
+msgstr ""
+
+#: First-WordpressTheme/options.php:136
+msgid "填写要显示的邮箱，显示在侧边栏小工具中。"
+msgstr ""
+
+#: First-WordpressTheme/options.php:144
 msgid "Input Text"
 msgstr ""
 
-#: options.php:112
+#: First-WordpressTheme/options.php:145
 msgid "A text input field."
 msgstr ""
 
-#: options.php:119
+#: First-WordpressTheme/options.php:152
 msgid "Input with Placeholder"
 msgstr ""
 
-#: options.php:120
+#: First-WordpressTheme/options.php:153
 msgid "A text input field with an HTML5 placeholder."
 msgstr ""
 
-#: options.php:127
+#: First-WordpressTheme/options.php:160
 msgid "Textarea"
 msgstr ""
 
-#: options.php:128
+#: First-WordpressTheme/options.php:161
 msgid "Textarea description."
 msgstr ""
 
-#: options.php:135
+#: First-WordpressTheme/options.php:168
 msgid "Input Select Small"
 msgstr ""
 
-#: options.php:136
+#: First-WordpressTheme/options.php:169
 msgid "Small Select Box."
 msgstr ""
 
-#: options.php:145
+#: First-WordpressTheme/options.php:178
 msgid "Input Select Wide"
 msgstr ""
 
-#: options.php:146
+#: First-WordpressTheme/options.php:179
 msgid "A wider select box."
 msgstr ""
 
-#: options.php:155
+#: First-WordpressTheme/options.php:188
 msgid "Select a Category"
 msgstr ""
 
-#: options.php:156
+#: First-WordpressTheme/options.php:189
 msgid "Passed an array of categories with cat_ID and cat_name"
 msgstr ""
 
-#: options.php:165
+#: First-WordpressTheme/options.php:198
 msgid "Select a Tag"
 msgstr ""
 
-#: options.php:166
+#: First-WordpressTheme/options.php:199
 msgid "Passed an array of tags with term_id and term_name"
 msgstr ""
 
-#: options.php:174
+#: First-WordpressTheme/options.php:207
 msgid "Select a Page"
 msgstr ""
 
-#: options.php:175
+#: First-WordpressTheme/options.php:208
 msgid "Passed an pages with ID and post_title"
 msgstr ""
 
-#: options.php:182
+#: First-WordpressTheme/options.php:215
 msgid "Input Radio (one)"
 msgstr ""
 
-#: options.php:183
+#: First-WordpressTheme/options.php:216
 msgid "Radio select with default options \"one\"."
 msgstr ""
 
-#: options.php:191
+#: First-WordpressTheme/options.php:224
 msgid "Example Info"
 msgstr ""
 
-#: options.php:192
+#: First-WordpressTheme/options.php:225
 msgid "This is just some example information you can put in the panel."
 msgstr ""
 
-#: options.php:197
+#: First-WordpressTheme/options.php:230
 msgid "Input Checkbox"
 msgstr ""
 
-#: options.php:198
+#: First-WordpressTheme/options.php:231
 msgid "Example checkbox, defaults to true."
 msgstr ""
 
-#: options.php:205
-msgid "Advanced Settings"
+#: First-WordpressTheme/options.php:238
+msgid "高级设置"
 msgstr ""
 
-#: options.php:210
+#: First-WordpressTheme/options.php:243
+msgid "下载模块banner"
+msgstr ""
+
+#: First-WordpressTheme/options.php:244
+msgid "位于文章页面，下载模块最上方标题的背景图片"
+msgstr ""
+
+#: First-WordpressTheme/options.php:251
 msgid "Check to Show a Hidden Text Input"
 msgstr ""
 
-#: options.php:211
+#: First-WordpressTheme/options.php:252
 msgid "Click here and see what happens."
 msgstr ""
 
-#: options.php:217
-msgid "Hidden Text Input"
+#: First-WordpressTheme/options.php:258
+msgid "更改作者存档页面网址前缀"
 msgstr ""
 
-#: options.php:218
-msgid "This option is hidden unless activated by a checkbox click."
+#: First-WordpressTheme/options.php:259
+msgid ""
+"作者存档页面网址前缀默认为\"author\"。如果更改后缀后，访问新的存档地址出现 "
+"404 错误，请访问WP后台 >设置>固定链接，重新保存一次即可。"
 msgstr ""
 
-#: options.php:226
+#: First-WordpressTheme/options.php:266
+msgid "微信公众号二维码"
+msgstr ""
+
+#: First-WordpressTheme/options.php:267
+msgid "微信公众号二维码，建议1：1比例"
+msgstr ""
+
+#: First-WordpressTheme/options.php:274
 msgid "Uploader Test"
 msgstr ""
 
-#: options.php:227
+#: First-WordpressTheme/options.php:275
 msgid "This creates a full size uploader that previews the image."
 msgstr ""
 
-#: options.php:246
+#: First-WordpressTheme/options.php:294
 msgid "Example Background"
 msgstr ""
 
-#: options.php:247
+#: First-WordpressTheme/options.php:295
 msgid "Change the background CSS."
 msgstr ""
 
-#: options.php:254
+#: First-WordpressTheme/options.php:302
 msgid "Multicheck"
 msgstr ""
 
-#: options.php:255
+#: First-WordpressTheme/options.php:303
 msgid "Multicheck description."
 msgstr ""
 
-#: options.php:263
+#: First-WordpressTheme/options.php:311
 msgid "Colorpicker"
 msgstr ""
 
-#: options.php:264
+#: First-WordpressTheme/options.php:312
 msgid "No color selected by default."
 msgstr ""
 
-#: options.php:270
+#: First-WordpressTheme/options.php:318
 msgid "Typography"
 msgstr ""
 
-#: options.php:271
+#: First-WordpressTheme/options.php:319
 msgid "Example typography."
 msgstr ""
 
-#: options.php:278
+#: First-WordpressTheme/options.php:326
 msgid "Custom Typography"
 msgstr ""
 
-#: options.php:279
+#: First-WordpressTheme/options.php:327
 msgid "Custom typography options."
 msgstr ""
 
-#: options.php:287
-msgid "Text Editor"
+#: First-WordpressTheme/options.php:335
+msgid "首页设置"
 msgstr ""
 
-#: options.php:306
+#: First-WordpressTheme/options.php:354
 msgid "Default Text Editor"
 msgstr ""
 
-#: options.php:307
+#: First-WordpressTheme/options.php:355
 #, php-format
 msgid ""
 "You can also pass settings to the editor.  Read more about wp_editor in <a "
 "href=\"%1$s\" target=\"_blank\">the WordPress codex</a>"
+msgstr ""
+
+#: First-WordpressTheme/options.php:362
+msgid "首页文章打开方式"
+msgstr ""
+
+#: First-WordpressTheme/options.php:363
+#, php-format
+msgid ""
+"填写<a href=\"%1$s\" target=\"_blank\">HTML中a标签target属性</a>，不熟悉HTML"
+"的朋友不要填写"
+msgstr ""
+
+#: First-WordpressTheme/options.php:374
+msgid "首页幻灯片 1 "
+msgstr ""
+
+#: First-WordpressTheme/options.php:375 First-WordpressTheme/options.php:399
+#: First-WordpressTheme/options.php:424
+msgid "选择首页幻灯片的图片，支持图床外链；建议所有幻灯片保持相同大小"
+msgstr ""
+
+#: First-WordpressTheme/options.php:381
+msgid "幻灯片 1 跳转链接"
+msgstr ""
+
+#: First-WordpressTheme/options.php:382 First-WordpressTheme/options.php:406
+#: First-WordpressTheme/options.php:431
+msgid "填写完整链接，如：“https://example.com/example”"
+msgstr ""
+
+#: First-WordpressTheme/options.php:389
+msgid "幻灯片 1 标题"
+msgstr ""
+
+#: First-WordpressTheme/options.php:390 First-WordpressTheme/options.php:414
+#: First-WordpressTheme/options.php:439
+msgid "显示在幻灯片底部的文字"
+msgstr ""
+
+#: First-WordpressTheme/options.php:398
+msgid "首页幻灯片 2 "
+msgstr ""
+
+#: First-WordpressTheme/options.php:405
+msgid "幻灯片 2 跳转链接"
+msgstr ""
+
+#: First-WordpressTheme/options.php:413
+msgid "幻灯片 2 标题"
+msgstr ""
+
+#: First-WordpressTheme/options.php:423
+msgid "首页幻灯片 3 "
+msgstr ""
+
+#: First-WordpressTheme/options.php:430
+msgid "幻灯片 3 跳转链接"
+msgstr ""
+
+#: First-WordpressTheme/options.php:438
+msgid "幻灯片 3 标题"
+msgstr ""
+
+#: First-WordpressTheme/options.php:449
+msgid "广告位"
+msgstr ""
+
+#: First-WordpressTheme/options.php:454
+msgid "文章底部广告位"
+msgstr ""
+
+#: First-WordpressTheme/options.php:455
+msgid "将广告联盟提供的代码复制到这里，将显示在文章页面的文章下面"
+msgstr ""
+
+#: First-WordpressTheme/options.php:462
+msgid "侧边栏小工具广告位"
+msgstr ""
+
+#: First-WordpressTheme/options.php:463
+msgid ""
+"将广告联盟提供的代码复制到这里，将显示在侧边栏。需要到“外观--小工具”里面把广"
+"告工具加到需要显示的位置"
+msgstr ""
+
+#: First-WordpressTheme/widgets/test.php:30
+msgid "小工具描述语句"
+msgstr ""
+
+#: First-WordpressTheme/widgets/test.php:32
+msgid "小工具标题"
+msgstr ""
+
+#: First-WordpressTheme/widgets/test.php:52
+#, php-format
+msgid "Hello. My name is %1$s."
+msgstr ""
+
+#: First-WordpressTheme/widgets/test.php:55
+#, php-format
+msgid "I am a %1$s."
+msgstr ""
+
+#: First-WordpressTheme/widgets/test.php:80
+msgid "Example"
+msgstr ""
+
+#: First-WordpressTheme/widgets/test.php:80
+msgid "John Doe"
+msgstr ""
+
+#: First-WordpressTheme/widgets/test.php:84
+msgid "标题:"
+msgstr ""
+
+#: First-WordpressTheme/widgets/test.php:89
+msgid "你的名字:"
+msgstr ""
+
+#: First-WordpressTheme/widgets/test.php:94
+msgid "性别:"
+msgstr ""
+
+#: First-WordpressTheme/widgets/test.php:103
+msgid "Display sex publicly?"
+msgstr ""
+
+#: First-WordpressTheme/widgets/widgets-ad.php:15
+msgid "广告(主题风格)"
+msgstr ""
+
+#: First-WordpressTheme/widgets/widgets-ad.php:16
+msgid "广告(主题)"
+msgstr ""
+
+#: First-WordpressTheme/widgets/widgets-search.php:15
+msgid "搜索(主题风格)"
+msgstr ""
+
+#: First-WordpressTheme/widgets/widgets-search.php:16
+msgid "搜索(主题)"
+msgstr ""
+
+#: First-WordpressTheme/widgets/widgets-siteinfo.php:15
+msgid "站点信息(主题风格)"
+msgstr ""
+
+#: First-WordpressTheme/widgets/widgets-siteinfo.php:16
+msgid "站点信息(主题)"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:32
+msgid "Displays list of posts with an array of options"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:33
+msgid "Ultimate Posts"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:201
+msgid "Categories"
+msgstr "分类"
+
+#: First/widgets/ultimate-posts-widget.php:208
+msgid "Tags"
+msgstr "Tags"
+
+#: First/widgets/ultimate-posts-widget.php:231
+#, fuzzy
+#| msgid "Not Found"
+msgid "No posts found."
+msgstr "Not Found"
+
+#: First/widgets/ultimate-posts-widget.php:325
+msgid "Read more &rarr;"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:328
+msgid "View More Posts"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:365
+#: First/widgets/ultimate-posts-widget.php:508
+msgid "Title"
+msgstr "标题"
+
+#: First/widgets/ultimate-posts-widget.php:368
+msgid "Title URL"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:371
+msgid "Number of posts"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:376
+msgid "Show title"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:381
+msgid "Show published date"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:386
+msgid "Show published time"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:391
+msgid "Show excerpt"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:395
+msgid "Excerpt length (in words)"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:402
+msgid "Show read more link"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:407
+msgid "Read more text"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:415
+msgid "Show thumbnail"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:419
+msgid "Thumbnail size"
+msgstr "缩略图大小"
+
+#: First/widgets/ultimate-posts-widget.php:422
+msgid "W"
+msgstr "W"
+
+#: First/widgets/ultimate-posts-widget.php:425
+msgid "H"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:430
+msgid "Crop mode"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:433
+msgid "Scale &amp; Crop to Fit"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:434
+msgid "Stretch to Fit"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:435
+msgid "Proportional Scale"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:436
+msgid "Proportional Scale No Borders"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:444
+msgid "Show more button"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:448
+msgid "More button text"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:453
+msgid "More button URL"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:459
+msgid "Show posts only from current category"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:464
+msgid "Show post categories"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:469
+msgid "Show post tags"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:473
+msgid "Select categories"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:484
+msgid "Select post types"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:496
+msgid "Sticky posts"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:498
+msgid "Show All Posts"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:499
+msgid "Hide Sticky Posts"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:500
+msgid "Show Only Sticky Posts"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:505
+msgid "Order by"
+msgstr "排序："
+
+#: First/widgets/ultimate-posts-widget.php:507
+msgid "Published Date"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:509
+msgid "Comment Count"
+msgstr ""
+
+#: First/widgets/ultimate-posts-widget.php:510
+msgid "Random"
+msgstr "随机"
+
+#: First/widgets/ultimate-posts-widget.php:515
+msgid "Order"
+msgstr "订单"
+
+#: First/widgets/ultimate-posts-widget.php:517
+msgid "Descending"
+msgstr "降序"
+
+#: First/widgets/ultimate-posts-widget.php:518
+msgid "Ascending"
+msgstr "上升"
+
+#: First/widgets/ultimate-posts-widget.php:522
+msgid "Developed by"
 msgstr ""

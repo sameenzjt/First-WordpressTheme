@@ -13,7 +13,7 @@ class Widget_ad extends WP_Widget {
    
     function __construct(){
         $widget_ops = array('classname' => 'Widget_ad','description' => __('广告(主题风格)','sameen'));
-        parent::__construct('Widget_ad' ,__('广告(主题)', 'sameen'), $widget_ops);
+        parent::__construct('Widget_ad' ,__('(主题)广告', 'sameen'), $widget_ops);
     }
     function form($instance) {
         $instance = wp_parse_args ( ( array ) $instance, array (
