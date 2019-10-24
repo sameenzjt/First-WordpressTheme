@@ -445,11 +445,20 @@ function optionsframework_options() {
 		'name' => __( '文章底部广告位', 'sameen' ),
 		'desc' => __( '将广告联盟提供的代码复制到这里，将显示在文章页面的文章下面', 'sameen' ),
 		'id' => 'ad-single-bottom',
-		'placeholder' => '填写文字',
+		'placeholder' => '填写广告联盟提供的代码',
 		'type' => 'textarea'
 	);
 
-	
+	$options[] = array(
+		'name' => __( '侧边栏小工具广告位', 'sameen' ),
+		'desc' => __( '将广告联盟提供的代码复制到这里，将显示在侧边栏。需要到“外观--小工具”里面把广告工具加到需要显示的位置', 'sameen' ),
+		'id' => 'ad-sidebar-widgets',
+		'placeholder' => '填写广告联盟提供的代码',
+		'type' => 'textarea'
+	);
+
+
+
 
 
 	return $options;

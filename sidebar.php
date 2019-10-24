@@ -150,13 +150,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="ad whitebg imgscale">
-                <ul>
-                    <a href="http://v.bootstrapmb.com/">
-                        <img src="<?php bloginfo('template_url'); ?>/images/ad.jpg">
-                    </a>
-                </ul>
-            </div>
+            
             <div class="whitebg wenzi">
                 <p class="htitle">猜你喜欢</p>
                 <ul>
