@@ -40,6 +40,9 @@
 
                 if (is_single()) {
 
+                    // 自定义字段名称为 _file_img_value
+                    $file_img = get_post_meta($post->ID, "_file_img_value", true);
+
                     // 自定义字段名称为 _file_name_value
                     $file_name = get_post_meta($post->ID, "_file_name_value", true);
 
@@ -68,6 +71,7 @@
                     $rar_password = get_post_meta($post->ID, "_rar_password_value", true);
 
                     // 去除不必要的空格和HTML标签
+                    $file_img = trim(strip_tags($file_img));
                     $file_name = trim(strip_tags($file_name));
                     $file_size = trim(strip_tags($file_size));
                     $file_version = trim(strip_tags($file_version));
@@ -80,68 +84,68 @@
                     
                     if ($file_name == null) echo '' . "";
                     if ($file_name != null) echo '
-                    <div style=" margin: 0px auto;" class="row">
-                        <div style="background-color: red; padding: 40px 0px; margin: 10px 0px;" class="col-sm-12 col-md-12 text-center rounded">
+                    <div style="margin: 0px auto;" class="row">
+                        <div style="background-image:url('.$file_img.');background-size:100%; padding: 40px 0px; margin: 10px 0px;" class="col-sm-12 col-md-12 text-center rounded">
                             <h3 name="file_name">'.$file_name.'</h3>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <p name="file_name">'.$file_name.'</p>
+                            <p name="file_name">软件名称：'.$file_name.'</p>
                         </div>
                     ' . "";
 
                     if ($file_size == null) echo '' . "";
                     if ($file_size != null) echo '
                         <div class="col-sm-12 col-md-6">
-                            <p name="file_size">'.$file_size.'</p>
+                            <p name="file_size">文件大小：'.$file_size.'</p>
                         </div>
                     ' . "";
 
                     if ($file_version == null) echo '' . "";
                     if ($file_version != null) echo '
                         <div class="col-sm-12 col-md-6">
-                            <p name="file_version">'.$file_version.'</p>
+                            <p name="file_version">软件版本：'.$file_version.'</p>
                         </div>
                     ' . "";
 
                     if ($file_system == null) echo '' . "";
                     if ($file_system != null) echo '
                         <div class="col-sm-12 col-md-6">
-                            <p name="file_system">'.$file_system.'</p>
+                            <p name="file_system">适用平台：'.$file_system.'</p>
                         </div>
                     ' . "";
 
                     if ($baidupan_link == null) echo '' . "";
                     if ($baidupan_link != null) echo '
                         <div class="col-sm-12 col-md-6">
-                            <p name="baidupan_link">'.$baidupan_link.'</p>
+                            <p name="baidupan_link">百度网盘：'.$baidupan_link.'</p>
                         </div>
                     ' . "";
 
                     if ($baidupan_password == null) echo '' . "";
                     if ($baidupan_password != null) echo '
                         <div class="col-sm-12 col-md-6">
-                            <p name="baidupan_password">'.$baidupan_password.'</p>
+                            <p name="baidupan_password">提取码：<code>'.$baidupan_password.'</code> </p>
                         </div>
                     ' . "";
 
                     if ($otherpan_link == null) echo '' . "";
                     if ($otherpan_link != null) echo '
                         <div class="col-sm-12 col-md-6">
-                            <p name="onterpan_link">'.$otherpan_link.'</p>
+                            <p name="onterpan_link">其他网盘：'.$otherpan_link.'</p>
                         </div>
                     ' . "";
 
                     if ($otherpan_password == null) echo '' . "";
                     if ($otherpan_password != null) echo '
                         <div class="col-sm-12 col-md-6">
-                            <p name="otherpan_password">'.$otherpan_password.'</p>
+                            <p name="otherpan_password">其他网盘密码：'.$otherpan_password.'</p>
                         </div>
                     ' . "";
 
                     if ($rar_password == null) echo '' . "";
                     if ($rar_password != null) echo '
                         <div class="col-sm-12 col-md-6">
-                            <p name="rar_password">'.$rar_password.'</p>
+                            <p name="rar_password">解压密码：'.$rar_password.'</p>
                         </div>
                     ' . "";
                     
@@ -154,12 +158,13 @@
                 
             ?>
         </div>
+
+    </div>
 <!--版权-->
-        <div class="alert alert-dark">
-            如未标明出处，所有文章均为本站原创。
-            <br>
-            如需转载，请附上原文地址：<a href="<?php the_permalink(); ?>"><?php bloginfo('name'); ?> » <?php the_title(); ?></a>
-        </div>
+    <div class="alert alert-dark">
+        如未标明出处，所有文章均为本站原创。
+        <br>
+        如需转载，请附上原文地址：<a href="<?php the_permalink(); ?>"><?php bloginfo('name'); ?> » <?php the_title(); ?></a>
     </div>
 <!--广告-->
     <div class="ad">
@@ -181,6 +186,11 @@
         </ul>
     </div>
 </div>
+
+
+<?php get_sidebar(); ?>
+
+
 </article>
 
 <?php get_footer(); ?>

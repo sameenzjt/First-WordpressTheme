@@ -14,6 +14,12 @@
     */
 $new_meta_boxes =
 array(
+
+    "file_img" => array(
+      "name" => "_file_img",
+      "std" => "",
+      "title" => "演示图(860*116)："),
+
     "file_name" => array(
         "name" => "_file_name",
         "std" => "",
