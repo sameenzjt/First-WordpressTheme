@@ -19,7 +19,7 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
 
       $widget_options = array(
         'classname' => 'widget_ultimate_posts',
-        'description' => __( 'Displays list of posts with an array of options', 'upw' )
+        'description' => __( '显示带有一系列选项的帖子列表', 'sameen' )
       );
 
       $control_options = array(
@@ -28,7 +28,7 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
 
       parent::__construct(
         'sticky-posts',
-        __( 'Ultimate Posts', 'upw' ),
+        __( 'Ultimate Posts', 'sameen' ),
         $widget_options,
         $control_options
       );
@@ -44,7 +44,7 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
         add_action('wp_enqueue_scripts', array(&$this, 'enqueue_theme_scripts'));
       }
 
-      load_plugin_textdomain('upw', false, basename( dirname( __FILE__ ) ) . '/languages' );
+      load_plugin_textdomain('sameen', false, basename( dirname( __FILE__ ) ) . '/languages' );
 
     }
 
@@ -271,7 +271,7 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
 
       // Set default arguments
       $instance = wp_parse_args( (array) $instance, array(
-        'title' => __('Ultimate Posts', 'upw'),
+        'title' => __('Ultimate Posts', 'sameen'),
         'class' => '',
         'title_link' => '' ,
         'number' => '5',
@@ -282,7 +282,7 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
         'thumb_size' => 'thumbnail',
         'attag' => false,
         'excerpt_length' => 10,
-        'excerpt_readmore' => __('Read more &rarr;', 'upw'),
+        'excerpt_readmore' => __('阅读更多 &rarr;', 'sameen'),
         'order' => 'DESC',
         'orderby' => 'date',
         'meta_key' => '',
@@ -393,27 +393,27 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
       <div class="upw-tab upw-tab-general">
 
         <p>
-          <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'upw' ); ?>:</label>
+          <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( '标题', 'sameen' ); ?>:</label>
           <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
         </p>
 
         <p>
-          <label for="<?php echo $this->get_field_id( 'title_link' ); ?>"><?php _e( 'Title URL', 'upw' ); ?>:</label>
+          <label for="<?php echo $this->get_field_id( 'title_link' ); ?>"><?php _e( '标题 URL', 'sameen' ); ?>:</label>
           <input class="widefat" id="<?php echo $this->get_field_id( 'title_link' ); ?>" name="<?php echo $this->get_field_name( 'title_link' ); ?>" type="text" value="<?php echo $title_link; ?>" />
         </p>
 
         <p>
-          <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php _e( 'CSS class', 'upw' ); ?>:</label>
+          <label for="<?php echo $this->get_field_id( 'class' ); ?>"><?php _e( 'CSS class', 'sameen' ); ?>:</label>
           <input class="widefat" id="<?php echo $this->get_field_id( 'class' ); ?>" name="<?php echo $this->get_field_name( 'class' ); ?>" type="text" value="<?php echo $class; ?>" />
         </p>
 
         <p>
-          <label for="<?php echo $this->get_field_id('before_posts'); ?>"><?php _e('Before posts', 'upw'); ?>:</label>
+          <label for="<?php echo $this->get_field_id('before_posts'); ?>"><?php _e('Before posts', 'sameen'); ?>:</label>
           <textarea class="widefat" id="<?php echo $this->get_field_id('before_posts'); ?>" name="<?php echo $this->get_field_name('before_posts'); ?>" rows="5"><?php echo $before_posts; ?></textarea>
         </p>
 
         <p>
-          <label for="<?php echo $this->get_field_id('after_posts'); ?>"><?php _e('After posts', 'upw'); ?>:</label>
+          <label for="<?php echo $this->get_field_id('after_posts'); ?>"><?php _e('After posts', 'sameen'); ?>:</label>
           <textarea class="widefat" id="<?php echo $this->get_field_id('after_posts'); ?>" name="<?php echo $this->get_field_name('after_posts'); ?>" rows="5"><?php echo $after_posts; ?></textarea>
         </p>
 
@@ -422,68 +422,68 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
       <div class="upw-tab upw-hide upw-tab-display">
 
         <p>
-          <label for="<?php echo $this->get_field_id('template'); ?>"><?php _e('Template', 'upw'); ?>:</label>
+          <label for="<?php echo $this->get_field_id('template'); ?>"><?php _e('Template', 'sameen'); ?>:</label>
           <select name="<?php echo $this->get_field_name('template'); ?>" id="<?php echo $this->get_field_id('template'); ?>" class="widefat">
-            <option value="legacy"<?php if( $template == 'legacy') echo ' selected'; ?>><?php _e('Legacy', 'upw'); ?></option>
-            <option value="standard"<?php if( $template == 'standard') echo ' selected'; ?>><?php _e('Standard', 'upw'); ?></option>
-            <option value="custom"<?php if( $template == 'custom') echo ' selected'; ?>><?php _e('Custom', 'upw'); ?></option>
+            <option value="legacy"<?php if( $template == 'legacy') echo ' selected'; ?>><?php _e('Legacy', 'sameen'); ?></option>
+            <option value="standard"<?php if( $template == 'standard') echo ' selected'; ?>><?php _e('标准', 'sameen'); ?></option>
+            <option value="custom"<?php if( $template == 'custom') echo ' selected'; ?>><?php _e('Custom', 'sameen'); ?></option>
           </select>
         </p>
 
         <p<?php if ($template !== 'custom') echo ' style="display:none;"'; ?>>
-          <label for="<?php echo $this->get_field_id('template_custom'); ?>"><?php _e('Custom Template Name', 'upw'); ?>:</label>
+          <label for="<?php echo $this->get_field_id('template_custom'); ?>"><?php _e('自定义模板名称', 'sameen'); ?>:</label>
           <input class="widefat" id="<?php echo $this->get_field_id('template_custom'); ?>" name="<?php echo $this->get_field_name('template_custom'); ?>" type="text" value="<?php echo $template_custom; ?>" />
         </p>
 
         <p>
-          <label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of posts', 'upw' ); ?>:</label>
+          <label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of posts', 'sameen' ); ?>:</label>
           <input class="widefat" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="number" value="<?php echo $number; ?>" min="-1" />
         </p>
 
         <p>
           <input class="checkbox" id="<?php echo $this->get_field_id( 'show_title' ); ?>" name="<?php echo $this->get_field_name( 'show_title' ); ?>" type="checkbox" <?php checked( (bool) $show_title, true ); ?> />
-          <label for="<?php echo $this->get_field_id( 'show_title' ); ?>"><?php _e( 'Show title', 'upw' ); ?></label>
+          <label for="<?php echo $this->get_field_id( 'show_title' ); ?>"><?php _e( '显示标题', 'sameen' ); ?></label>
         </p>
 
         <p>
           <input class="checkbox" id="<?php echo $this->get_field_id( 'show_date' ); ?>" name="<?php echo $this->get_field_name( 'show_date' ); ?>" type="checkbox" <?php checked( (bool) $show_date, true ); ?> />
-          <label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Show published date', 'upw' ); ?></label>
+          <label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( '显示发布日期', 'sameen' ); ?></label>
         </p>
 
         <p<?php if (!$show_date) echo ' style="display:none;"'; ?>>
-          <label for="<?php echo $this->get_field_id('date_format'); ?>"><?php _e( 'Date format', 'upw' ); ?>:</label>
+          <label for="<?php echo $this->get_field_id('date_format'); ?>"><?php _e( '日期格式', 'sameen' ); ?>:</label>
           <input class="widefat" type="text" id="<?php echo $this->get_field_id('date_format'); ?>" name="<?php echo $this->get_field_name('date_format'); ?>" value="<?php echo $date_format; ?>" />
         </p>
 
         <p>
           <input class="checkbox" id="<?php echo $this->get_field_id( 'show_author' ); ?>" name="<?php echo $this->get_field_name( 'show_author' ); ?>" type="checkbox" <?php checked( (bool) $show_author, true ); ?> />
-          <label for="<?php echo $this->get_field_id( 'show_author' ); ?>"><?php _e( 'Show post author', 'upw' ); ?></label>
+          <label for="<?php echo $this->get_field_id( 'show_author' ); ?>"><?php _e( '显示帖子作者', 'sameen' ); ?></label>
         </p>
 
         <p>
           <input class="checkbox" id="<?php echo $this->get_field_id( 'show_comments' ); ?>" name="<?php echo $this->get_field_name( 'show_comments' ); ?>" type="checkbox" <?php checked( (bool) $show_comments, true ); ?> />
-          <label for="<?php echo $this->get_field_id( 'show_comments' ); ?>"><?php _e( 'Show comments count', 'upw' ); ?></label>
+          <label for="<?php echo $this->get_field_id( 'show_comments' ); ?>"><?php _e( '显示评论数', 'sameen' ); ?></label>
         </p>
 
         <p>
           <input class="checkbox" id="<?php echo $this->get_field_id( 'show_excerpt' ); ?>" name="<?php echo $this->get_field_name( 'show_excerpt' ); ?>" type="checkbox" <?php checked( (bool) $show_excerpt, true ); ?> />
-          <label for="<?php echo $this->get_field_id( 'show_excerpt' ); ?>"><?php _e( 'Show excerpt', 'upw' ); ?></label>
+          <label for="<?php echo $this->get_field_id( 'show_excerpt' ); ?>"><?php _e( '显示摘要', 'sameen' ); ?></label>
         </p>
 
         <p<?php if (!$show_excerpt) echo ' style="display:none;"'; ?>>
-          <label for="<?php echo $this->get_field_id('excerpt_length'); ?>"><?php _e( 'Excerpt length (in words)', 'upw' ); ?>:</label>
+          <label for="<?php echo $this->get_field_id('excerpt_length'); ?>"><?php _e( '摘要长度（以字为单位）', 'sameen' ); ?>:</label>
           <input class="widefat" type="number" id="<?php echo $this->get_field_id('excerpt_length'); ?>" name="<?php echo $this->get_field_name('excerpt_length'); ?>" value="<?php echo $excerpt_length; ?>" min="-1" />
         </p>
 
         <p>
           <input class="checkbox" id="<?php echo $this->get_field_id( 'show_content' ); ?>" name="<?php echo $this->get_field_name( 'show_content' ); ?>" type="checkbox" <?php checked( (bool) $show_content, true ); ?> />
-          <label for="<?php echo $this->get_field_id( 'show_content' ); ?>"><?php _e( 'Show content', 'upw' ); ?></label>
+          <label for="<?php echo $this->get_field_id( 'show_content' ); ?>"><?php _e( '展示内容', 'sameen' ); ?></label>
         </p>
 
         <p<?php if (!$show_excerpt && !$show_content) echo ' style="display:none;"'; ?>>
           <label for="<?php echo $this->get_field_id('show_readmore'); ?>">
           <input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('show_readmore'); ?>" name="<?php echo $this->get_field_name('show_readmore'); ?>"<?php checked( (bool) $show_readmore, true ); ?> />
-          <?php _e( 'Show read more link', 'upw' ); ?>
+          <?php _e( '显示更多链接', 'sameen' ); ?>
           </label>
         </p>
 
@@ -498,7 +498,7 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
           <p>
             <input class="checkbox" id="<?php echo $this->get_field_id( 'show_thumbnail' ); ?>" name="<?php echo $this->get_field_name( 'show_thumbnail' ); ?>" type="checkbox" <?php checked( (bool) $show_thumbnail, true ); ?> />
 
-            <label for="<?php echo $this->get_field_id( 'show_thumbnail' ); ?>"><?php _e( 'Show thumbnail', 'upw' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'show_thumbnail' ); ?>"><?php _e( '显示缩略图', 'sameen' ); ?></label>
           </p>
 
           <p<?php if (!$show_thumbnail) echo ' style="display:none;"'; ?>>
@@ -514,16 +514,16 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
 
         <p>
           <input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('show_cats'); ?>" name="<?php echo $this->get_field_name('show_cats'); ?>" <?php checked( (bool) $show_cats, true ); ?> />
-          <label for="<?php echo $this->get_field_id('show_cats'); ?>"> <?php _e('Show post categories', 'upw'); ?></label>
+          <label for="<?php echo $this->get_field_id('show_cats'); ?>"> <?php _e('显示帖子分类', 'sameen'); ?></label>
         </p>
 
         <p>
           <input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('show_tags'); ?>" name="<?php echo $this->get_field_name('show_tags'); ?>" <?php checked( (bool) $show_tags, true ); ?> />
-          <label for="<?php echo $this->get_field_id('show_tags'); ?>"> <?php _e('Show post tags', 'upw'); ?></label>
+          <label for="<?php echo $this->get_field_id('show_tags'); ?>"> <?php _e('显示帖子标签', 'sameen'); ?></label>
         </p>
 
         <p>
-          <label for="<?php echo $this->get_field_id( 'custom_fields' ); ?>"><?php _e( 'Show custom fields (comma separated)', 'upw' ); ?>:</label>
+          <label for="<?php echo $this->get_field_id( 'custom_fields' ); ?>"><?php _e( '显示自定义字段（用逗号分隔）', 'sameen' ); ?>:</label>
           <input class="widefat" id="<?php echo $this->get_field_id( 'custom_fields' ); ?>" name="<?php echo $this->get_field_name( 'custom_fields' ); ?>" type="text" value="<?php echo $custom_fields; ?>" />
         </p>
 
@@ -533,11 +533,11 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
 
         <p>
           <input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('atcat'); ?>" name="<?php echo $this->get_field_name('atcat'); ?>" <?php checked( (bool) $atcat, true ); ?> />
-          <label for="<?php echo $this->get_field_id('atcat'); ?>"> <?php _e('Show posts only from current category', 'upw');?></label>
+          <label for="<?php echo $this->get_field_id('atcat'); ?>"> <?php _e('仅显示当前类别的帖子', 'sameen');?></label>
         </p>
 
         <p>
-          <label for="<?php echo $this->get_field_id('cats'); ?>"><?php _e( 'Categories', 'upw' ); ?>:</label>
+          <label for="<?php echo $this->get_field_id('cats'); ?>"><?php _e( '分类目录', 'sameen' ); ?>:</label>
           <select name="<?php echo $this->get_field_name('cats'); ?>[]" id="<?php echo $this->get_field_id('cats'); ?>" class="widefat" style="height: auto;" size="<?php echo $c ?>" multiple>
             <option value="" <?php if (empty($cats)) echo 'selected="selected"'; ?>><?php _e('&ndash; Show All &ndash;') ?></option>
             <?php
@@ -551,11 +551,11 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
         <?php if ($tag_list) : ?>
           <p>
             <input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('attag'); ?>" name="<?php echo $this->get_field_name('attag'); ?>" <?php checked( (bool) $attag, true ); ?> />
-            <label for="<?php echo $this->get_field_id('attag'); ?>"> <?php _e('Show posts only from current tag', 'upw');?></label>
+            <label for="<?php echo $this->get_field_id('attag'); ?>"> <?php _e('仅显示来自当前标签的帖子', 'sameen');?></label>
           </p>
 
           <p>
-            <label for="<?php echo $this->get_field_id('tags'); ?>"><?php _e( 'Tags', 'upw' ); ?>:</label>
+            <label for="<?php echo $this->get_field_id('tags'); ?>"><?php _e( 'Tags', 'sameen' ); ?>:</label>
             <select name="<?php echo $this->get_field_name('tags'); ?>[]" id="<?php echo $this->get_field_id('tags'); ?>" class="widefat" style="height: auto;" size="<?php echo $t ?>" multiple>
               <option value="" <?php if (empty($tags)) echo 'selected="selected"'; ?>><?php _e('&ndash; Show All &ndash;') ?></option>
               <?php
@@ -567,7 +567,7 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
         <?php endif; ?>
 
         <p>
-          <label for="<?php echo $this->get_field_id('types'); ?>"><?php _e( 'Post types', 'upw' ); ?>:</label>
+          <label for="<?php echo $this->get_field_id('types'); ?>"><?php _e( 'Post types', 'sameen' ); ?>:</label>
           <select name="<?php echo $this->get_field_name('types'); ?>[]" id="<?php echo $this->get_field_id('types'); ?>" class="widefat" style="height: auto;" size="<?php echo $n ?>" multiple>
             <option value="" <?php if (empty($types)) echo 'selected="selected"'; ?>><?php _e('&ndash; Show All &ndash;') ?></option>
             <?php
@@ -580,11 +580,11 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
         </p>
 
         <p>
-          <label for="<?php echo $this->get_field_id('sticky'); ?>"><?php _e( 'Sticky posts', 'upw' ); ?>:</label>
+          <label for="<?php echo $this->get_field_id('sticky'); ?>"><?php _e( 'Sticky posts', 'sameen' ); ?>:</label>
           <select name="<?php echo $this->get_field_name('sticky'); ?>" id="<?php echo $this->get_field_id('sticky'); ?>" class="widefat">
-            <option value="show"<?php if( $sticky === 'show') echo ' selected'; ?>><?php _e('Show All Posts', 'upw'); ?></option>
-            <option value="hide"<?php if( $sticky == 'hide') echo ' selected'; ?>><?php _e('Hide Sticky Posts', 'upw'); ?></option>
-            <option value="only"<?php if( $sticky == 'only') echo ' selected'; ?>><?php _e('Show Only Sticky Posts', 'upw'); ?></option>
+            <option value="show"<?php if( $sticky === 'show') echo ' selected'; ?>><?php _e('显示所有帖子', 'sameen'); ?></option>
+            <option value="hide"<?php if( $sticky == 'hide') echo ' selected'; ?>><?php _e('Hide Sticky Posts', 'sameen'); ?></option>
+            <option value="only"<?php if( $sticky == 'only') echo ' selected'; ?>><?php _e('Show Only Sticky Posts', 'sameen'); ?></option>
           </select>
         </p>
 
@@ -593,34 +593,34 @@ if ( !class_exists( 'WP_Widget_Ultimate_Posts' ) ) {
       <div class="upw-tab upw-hide upw-tab-order">
 
         <p>
-          <label for="<?php echo $this->get_field_id('orderby'); ?>"><?php _e('Order by', 'upw'); ?>:</label>
+          <label for="<?php echo $this->get_field_id('orderby'); ?>"><?php _e('Order by', 'sameen'); ?>:</label>
           <select name="<?php echo $this->get_field_name('orderby'); ?>" id="<?php echo $this->get_field_id('orderby'); ?>" class="widefat">
-            <option value="date"<?php if( $orderby == 'date') echo ' selected'; ?>><?php _e('Published Date', 'upw'); ?></option>
-            <option value="title"<?php if( $orderby == 'title') echo ' selected'; ?>><?php _e('Title', 'upw'); ?></option>
-            <option value="comment_count"<?php if( $orderby == 'comment_count') echo ' selected'; ?>><?php _e('Comment Count', 'upw'); ?></option>
+            <option value="date"<?php if( $orderby == 'date') echo ' selected'; ?>><?php _e('发布日期', 'sameen'); ?></option>
+            <option value="title"<?php if( $orderby == 'title') echo ' selected'; ?>><?php _e('标题', 'sameen'); ?></option>
+            <option value="comment_count"<?php if( $orderby == 'comment_count') echo ' selected'; ?>><?php _e('评论数', 'sameen'); ?></option>
             <option value="rand"<?php if( $orderby == 'rand') echo ' selected'; ?>><?php _e('Random'); ?></option>
-            <option value="meta_value"<?php if( $orderby == 'meta_value') echo ' selected'; ?>><?php _e('Custom Field', 'upw'); ?></option>
-            <option value="menu_order"<?php if( $orderby == 'menu_order') echo ' selected'; ?>><?php _e('Menu Order', 'upw'); ?></option>
+            <option value="meta_value"<?php if( $orderby == 'meta_value') echo ' selected'; ?>><?php _e('Custom Field', 'sameen'); ?></option>
+            <option value="menu_order"<?php if( $orderby == 'menu_order') echo ' selected'; ?>><?php _e('Menu Order', 'sameen'); ?></option>
           </select>
         </p>
 
         <p<?php if ($orderby !== 'meta_value') echo ' style="display:none;"'; ?>>
-          <label for="<?php echo $this->get_field_id( 'meta_key' ); ?>"><?php _e('Custom field', 'upw'); ?>:</label>
+          <label for="<?php echo $this->get_field_id( 'meta_key' ); ?>"><?php _e('Custom field', 'sameen'); ?>:</label>
           <input class="widefat" id="<?php echo $this->get_field_id('meta_key'); ?>" name="<?php echo $this->get_field_name('meta_key'); ?>" type="text" value="<?php echo $meta_key; ?>" />
         </p>
 
         <p>
-          <label for="<?php echo $this->get_field_id('order'); ?>"><?php _e('Order', 'upw'); ?>:</label>
+          <label for="<?php echo $this->get_field_id('order'); ?>"><?php _e('Order', 'sameen'); ?>:</label>
           <select name="<?php echo $this->get_field_name('order'); ?>" id="<?php echo $this->get_field_id('order'); ?>" class="widefat">
-            <option value="DESC"<?php if( $order == 'DESC') echo ' selected'; ?>><?php _e('Descending', 'upw'); ?></option>
-            <option value="ASC"<?php if( $order == 'ASC') echo ' selected'; ?>><?php _e('Ascending', 'upw'); ?></option>
+            <option value="DESC"<?php if( $order == 'DESC') echo ' selected'; ?>><?php _e('降序', 'sameen'); ?></option>
+            <option value="ASC"<?php if( $order == 'ASC') echo ' selected'; ?>><?php _e('升序', 'sameen'); ?></option>
           </select>
         </p>
 
       </div>
 
       <p class="upw-credits">
-        <?php _e('Enjoy this plugin? <a href="http://bostondv.com/tips/" target="_blank">Send a tip to support development</a>.', 'upw'); ?>
+        <?php _e('喜欢这个插件吗？ <a href="http://bostondv.com/tips/" target="_blank">发送提示以支持开发</a>.', 'sameen'); ?>
       </p>
 
       <?php if ( $instance ) { ?>
