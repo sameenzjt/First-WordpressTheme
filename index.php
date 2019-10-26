@@ -70,7 +70,7 @@
                         <?php if (has_excerpt()) {
                             echo $description = get_the_excerpt(); //文章编辑中的摘要
                         }else {
-                            echo mb_strimwidth(strip_tags(apply_filters('the_content', $post->post_content)), 0, 210,"……"); //文章编辑中若无摘要，自定截取文章内容字数做为摘要
+                            echo mb_strimwidth(strip_tags(apply_filters('the_content', $post->post_content)), 0, 210,"……"); //文章编辑中若无摘要，自定截取文章内容字数做为摘要，index-list-summary摘要字数，index-list-ellipsis省略符
                         } ?>
                     </p>
                     <p class="bloginfo">

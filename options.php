@@ -103,14 +103,16 @@ function optionsframework_options() {
 		'type' => 'heading'
 	);
 
+	
+
 	$options[] = array(
-		'name' => __( '1', 'theme-textdomain' ),
-		'desc' => __( '1.', 'theme-textdomain' ),
-		'id' => 'ex',
-		'std' => 'Default',
-		'class' => 'mini',
-		'type' => 'text'
+		'name' => __( '微信公众号二维码', 'sameen' ),
+		'desc' => __( '微信公众号二维码，建议1：1比例', 'sameen' ),
+		'id' => 'qr_weixin_gzh',
+		'placeholder' => '选择图片',
+		'type' => 'upload'
 	);
+
 
 	$options[] = array(
 		'name' => __( '导航栏固定方式', 'sameen' ),
@@ -240,6 +242,15 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
+		'name' => __( '首页文章打开方式', 'sameen' ),
+		'desc' => sprintf( __( '填写<a href="%1$s" target="_blank">HTML中a标签target属性</a>，不熟悉HTML的朋友不要填写', 'sameen' ), 'https://www.w3school.com.cn/tags/att_a_target.asp' ),
+		'id' => 'index_single_target',
+		'std' => '',
+		'placeholder' => '_self',
+		'type' => 'text'
+	);
+
+	$options[] = array(
 		'name' => __( '下载模块banner', 'sameen' ),
 		'desc' => __( '位于文章页面，下载模块最上方标题的背景图片', 'sameen' ),
 		'id' => 'single_download_banner',
@@ -262,14 +273,7 @@ function optionsframework_options() {
 		'type' => 'text'
 	);
 
-	$options[] = array(
-		'name' => __( '微信公众号二维码', 'sameen' ),
-		'desc' => __( '微信公众号二维码，建议1：1比例', 'sameen' ),
-		'id' => 'qr_weixin_gzh',
-		'placeholder' => '选择图片',
-		'type' => 'upload'
-	);
-
+	
 	$options[] = array(
 		'name' => __( 'Uploader Test', 'theme-textdomain' ),
 		'desc' => __( 'This creates a full size uploader that previews the image.', 'theme-textdomain' ),
@@ -358,14 +362,7 @@ function optionsframework_options() {
 		'settings' => $wp_editor_settings
 	);
 
-	$options[] = array(
-		'name' => __( '首页文章打开方式', 'sameen' ),
-		'desc' => sprintf( __( '填写<a href="%1$s" target="_blank">HTML中a标签target属性</a>，不熟悉HTML的朋友不要填写', 'sameen' ), 'https://www.w3school.com.cn/tags/att_a_target.asp' ),
-		'id' => 'index_single_target',
-		'std' => '',
-		'placeholder' => '_self',
-		'type' => 'text'
-	);
+	
 	/*
 	* 首页幻灯片
 	*/
