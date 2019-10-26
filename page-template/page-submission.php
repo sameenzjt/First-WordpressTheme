@@ -70,47 +70,66 @@ if( isset($_POST['tougao_form']) && $_POST['tougao_form'] == 'send') {
 get_header(); ?>
 
 
-<?php the_content(); ?>
+
+
+
 <article>
+
+<?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
+
+<div class="whitebg" style="width:60%; margin: 0 auto;">
+
+<div class="con_text">
+    <?php the_content(); ?>
+</div>
+
+
 <!-- 关于表单样式，请自行调整-->
-<form class="ludou-tougao" method="post" action="<?php echo $_SERVER["REQUEST_URI"]; $current_user = wp_get_current_user(); ?>">
-	<div style="text-align: left; padding-top: 10px;">
+<form class="ludou-tougao" method="post" action="<?php echo $_SERVER["REQUEST_URI"]; $current_user = wp_get_current_user(); ?>" role="form">
+	<div style="text-align: left; padding-top: 10px;" class="form-group">
 		<label for="tougao_authorname">昵称：*</label>
-		<input type="text" size="40" value="<?php if ( 0 != $current_user->ID ) echo $current_user->user_login; ?>" id="tougao_authorname" name="tougao_authorname" />
+		<input type="text" size="40" value="<?php if ( 0 != $current_user->ID ) echo $current_user->user_login; ?>" id="tougao_authorname" name="tougao_authorname" class ="form-control" />
 	</div>
 
-	<div style="text-align: left; padding-top: 10px;">
+	<div style="text-align: left; padding-top: 10px;" class="form-group">
 		<label for="tougao_authoremail">E-Mail：*</label>
-		<input type="text" size="40" value="<?php if ( 0 != $current_user->ID ) echo $current_user->user_email; ?>" id="tougao_authoremail" name="tougao_authoremail" />
+		<input type="text" size="40" value="<?php if ( 0 != $current_user->ID ) echo $current_user->user_email; ?>" id="tougao_authoremail" name="tougao_authoremail" class ="form-control" />
 	</div>
 
-	<div style="text-align: left; padding-top: 10px;">
+	<div style="text-align: left; padding-top: 10px;" class="form-group">
 		<label for="tougao_authorblog">您的博客：</label>
-		<input type="text" size="40" value="<?php if ( 0 != $current_user->ID ) echo $current_user->user_url; ?>" id="tougao_authorblog" name="tougao_authorblog" />
+		<input type="text" size="40" value="<?php if ( 0 != $current_user->ID ) echo $current_user->user_url; ?>" id="tougao_authorblog" name="tougao_authorblog" class ="form-control" />
 	</div>
 
-	<div style="text-align: left; padding-top: 10px;">
+	<div style="text-align: left; padding-top: 10px;" class="form-group">
 		<label for="tougao_title">文章标题：*</label>
-		<input type="text" size="40" value="" id="tougao_title" name="tougao_title" />
+		<input type="text" size="40" value="" id="tougao_title" name="tougao_title" class ="form-control" />
 	</div>
 
-	<div style="text-align: left; padding-top: 10px;">
+	<div style="text-align: left; padding-top: 10px;" class="form-group">
 		<label for="tougaocategorg">分类：*</label>
-		<?php wp_dropdown_categories('hide_empty=0&id=tougaocategorg&show_count=1&hierarchical=1'); ?>
+		<?php wp_dropdown_categories('hide_empty=0&id=tougaocategorg&show_count=1&hierarchical=1&class=form-control'); ?>
 	</div>
 
-	<div style="text-align: left; padding-top: 10px;">
+	<div style="text-align: left; padding-top: 10px;" class="form-group">
 		<label style="vertical-align:top" for="tougao_content">文章内容：*</label>
-		<textarea rows="15" cols="55" id="tougao_content" name="tougao_content"></textarea>
+		<textarea rows="15" cols="55" id="tougao_content" name="tougao_content" class ="form-control"></textarea>
 	</div>
 
 	<br clear="all">
-	<div style="text-align: center; padding-top: 10px;">
+	<div style="text-align: center; padding-top: 10px;" class="form-group">
 		<input type="hidden" value="send" name="tougao_form" />
-		<input type="submit" value="提交" />
-		<input type="reset" value="重填" />
+		<input type="submit" value="提交" class ="form-control" style="width:100px" />
+        <br>
+		<input type="reset" value="重填" class ="form-control" style="width:100px" />
 	</div>
 </form>
+</div>
+<?php else : ?>
+        <div class="grid_8">
+            没有找到你想要的页面！
+        </div>
+    <?php endif; ?>
 </article>
 
 

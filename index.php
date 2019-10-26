@@ -1,17 +1,10 @@
 <?php get_header(); ?>
 
-<?php
-if ($_SERVER['HTTP_HOST']!='zjt.sameen.art')//如果域名不是adcc.me
-{
-    echo "
-    <script>
-    // 以下方式直接跳转  
-    //飞鸟慕鱼博客
-    window.location.href = 'https://www.sameen.art/';
-   
-</script>
-";}
-?>
+
+<!--< ?php if ($_SERVER['HTTP_HOST']!='zjt.sameen.art') 
+{ echo "<script>// 以下方式直接跳转 window.location.href = 'https://www.sameen.art/';</script>";} 
+?>-->
+
 
 <article>
     <div class="lbox">
