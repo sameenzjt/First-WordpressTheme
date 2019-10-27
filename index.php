@@ -90,9 +90,14 @@
                 <h3 class="title"><a href="#" rel="bookmark">未找到</a></h3>
                 <p>没有找到任何文章！</p>
                 <?php endif; ?>
+               
+
                 
+
             </div>
-            <p class="clearfix"><?php previous_posts_link('<< 查看新文章', 0); ?> <span class="float right"><?php next_posts_link('查看旧文章 >>', 0); ?></span></p>
+            <ul class="pagination" style="height: 50px;">
+                <?php if (function_exists('pagenavi')) { pagenavi(); } ?>
+            </ul>
         </div>
         <!--bloglist end-->
     </div>

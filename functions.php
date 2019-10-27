@@ -256,6 +256,30 @@ add_theme_support( 'post-thumbnails' );
  */
 
 
+if ( !function_exists('pagenavi') ) {
+    function pagenavi( $p = 3 ) { // 取当前页前后各 2 页
+        if ( is_singular() ) return; // 文章与插页不用
+        global $wp_query, $paged;
+        $max_page = $wp_query->max_num_pages;
+        if ( $max_page == 1 ) return; // 只有一页不用
+        if ( empty( $paged ) ) $paged = 1;
+        //echo '<li class="page-item"><a class="page-link">' . $paged . ' / ' . $max_page . '</a></li> '; // 显示页数
+        if ( $paged > $p + 1 ) p_link( 1, '最前页', '首页' );
+	    if ( $paged > 1 ) p_link( $paged - 1, '上一页', '&lsaquo;' );/* 如果当前页大于1就显示上一页链接 */
 
+        for( $i = $paged - $p; $i <= $paged + $p; $i++ ) { // 中间页
+            if ( $i > 0 && $i <= $max_page ) $i == $paged ? print "<li class='page-item active'><a class='page-link'>{$i}</a></li> " : p_link( $i );
+        }
+        if ( $paged < $max_page - $p - 1 ) echo '<li class="page-item"><a class="page-link">&hellip;</a></li>';
+        if ( $paged < $max_page ) p_link( $paged + 1,'下一页', '&rsaquo;' );/* 如果当前页不是最后一页显示下一页链接 */
+	    if ( $paged < $max_page - $p ) p_link( $max_page, '最后页', '尾页' );
+
+    }
+   function p_link( $i, $title = '', $linktype = '' ) {
+        if ( $title == '' ) $title = "第 {$i} 页";
+        if ( $linktype == '' ) { $linktext = $i; } else { $linktext = $linktype; }
+        echo "<li class='page-item'><a class='page-link' href='", esc_html( get_pagenum_link( $i ) ), "' title='{$title}'>{$linktext}</a></li> ";
+    }
+}
 
 ?>
