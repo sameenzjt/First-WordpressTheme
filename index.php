@@ -95,15 +95,18 @@
                 
 
             </div>
+
+            <!-- 分页导航 -->
             <ul class="pagination" style="height: 50px;">
                 <?php if (function_exists('pagenavi')) { pagenavi(); } ?>
             </ul>
+
         </div>
         <!--bloglist end-->
     </div>
 
     <?php get_sidebar(); ?>
-
+    
 </article>
 
 <?php get_footer(); ?>

@@ -257,7 +257,7 @@ add_theme_support( 'post-thumbnails' );
 
 
 if ( !function_exists('pagenavi') ) {
-    function pagenavi( $p = 3 ) { // 取当前页前后各 2 页
+    function pagenavi( $p = 3 ) { // 取当前页前后各 4 页
         if ( is_singular() ) return; // 文章与插页不用
         global $wp_query, $paged;
         $max_page = $wp_query->max_num_pages;
